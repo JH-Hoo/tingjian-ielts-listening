@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Human Memory</title><style>
+:root{--ink:#183c38;--green:#0e5a4f;--mint:#e4efeb;--paper:#fffdf8;--line:#d8ded9;--red:#b94a2d}
+*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:var(--ink);font:15px/1.65 Arial,sans-serif}
+header{position:sticky;top:0;z-index:2;padding:18px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
+header strong{display:block;font:24px Georgia,serif}header small{color:#70827c}
+main{max-width:920px;margin:auto;padding:24px 28px 100px}audio{width:100%;margin:0 0 22px}
+.intro{padding:17px 20px;border-left:3px solid #eb6b43;background:var(--mint)}
+section{margin-top:24px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+h2{margin:0 0 16px;font:22px Georgia,serif}.q{padding:18px 0;border-top:1px solid #e5e8e5}.q:first-of-type{border-top:0}
+.q-title{display:flex;gap:10px}.num{min-width:42px;color:#eb6b43;font-weight:bold}
+input[type=text]{width:220px;max-width:100%;margin:12px 0 0 52px;padding:9px 10px;border:1px solid #8ca29b;border-radius:4px}
+label{display:block;margin:8px 0 0 52px}.answer{display:none;margin:13px 0 0 52px;padding:11px 13px;background:#edf6f2;border-left:3px solid var(--green)}
+.answer.bad{background:#fff0eb;border-color:var(--red)}body.review .answer{display:block}.correct{color:var(--green)}.incorrect{color:var(--red)}
+footer{position:fixed;right:0;bottom:0;left:0;display:flex;justify-content:flex-end;gap:10px;padding:13px 28px;background:var(--paper);border-top:1px solid var(--line)}
+button{padding:10px 18px;border:1px solid var(--green);border-radius:4px;background:white;color:var(--green);font-weight:bold;cursor:pointer}button.primary{background:var(--green);color:white}
+@media(max-width:600px){header,main,footer{padding-left:14px;padding-right:14px}input[type=text],label,.answer{margin-left:0}}
+</style></head><body>
+<header><strong>Human Memory</strong><small>Complete the notes. Write ONE WORD ONLY for each answer.</small></header>
+<main><audio controls preload="metadata" src="audio.m4a"></audio><div class="intro">Complete the notes. Write ONE WORD ONLY for each answer.</div>
+<section><h2>Human Memory</h2><div class="q" data-index="0">
+<div class="q-title"><span class="num">31</span><span>Before 3000 BC, people were unable to ___, so they relied on memory.</span></div>
+<input type="text" name="q31" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：write<br>Writing had not yet been developed.</div></div><div class="q" data-index="1">
+<div class="q-title"><span class="num">32</span><span>Memory identified dangerous foods, such as some types of ___.</span></div>
+<input type="text" name="q32" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：plants<br>Some similar-looking plants were poisonous.</div></div><div class="q" data-index="2">
+<div class="q-title"><span class="num">33</span><span>Memories linked to a ___ are easier to recall.</span></div>
+<input type="text" name="q33" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：place<br>Simonides linked information with a particular place.</div></div><div class="q" data-index="3">
+<div class="q-title"><span class="num">34</span><span>The senses, especially ___, could help memory.</span></div>
+<input type="text" name="q34" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：sight<br>The lecture singles out sight.</div></div><div class="q" data-index="4">
+<div class="q-title"><span class="num">35</span><span>Making a good ___ depended on memory.</span></div>
+<input type="text" name="q35" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：speech<br>Public speaking relied on a strong memory.</div></div><div class="q" data-index="5">
+<div class="q-title"><span class="num">36</span><span>People also have their ___ memory.</span></div>
+<input type="text" name="q36" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：natural<br>Cicero contrasted developed artificial memory with natural memory.</div></div><div class="q" data-index="6">
+<div class="q-title"><span class="num">37</span><span>Scholastics used memory techniques to teach ___.</span></div>
+<input type="text" name="q37" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：religion<br>They instructed pupils about religion.</div></div><div class="q" data-index="7">
+<div class="q-title"><span class="num">38</span><span>In the 17th century, people believed ___ could provide explanations.</span></div>
+<input type="text" name="q38" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：science<br>Science was believed to answer human questions.</div></div><div class="q" data-index="8">
+<div class="q-title"><span class="num">39</span><span>Schoolchildren learned facts such as ___ through repetition.</span></div>
+<input type="text" name="q39" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：dates<br>The example given is repeatedly learning dates.</div></div><div class="q" data-index="9">
+<div class="q-title"><span class="num">40</span><span>‘S’ worked as a ___.</span></div>
+<input type="text" name="q40" autocomplete="off">
+<div class="answer"><strong></strong><br>答案：journalist<br>The research subject S was a journalist.</div></div></section>
+</main><footer><button id="reset">重新作答</button><button class="primary" id="finish-btn">提交并查看答案</button></footer>
+<script>
+const data=[{"n":31,"prompt":"Before 3000 BC, people were unable to ___, so they relied on memory.","answer":["write"],"explanation":"Writing had not yet been developed."},{"n":32,"prompt":"Memory identified dangerous foods, such as some types of ___.","answer":["plants"],"explanation":"Some similar-looking plants were poisonous."},{"n":33,"prompt":"Memories linked to a ___ are easier to recall.","answer":["place"],"explanation":"Simonides linked information with a particular place."},{"n":34,"prompt":"The senses, especially ___, could help memory.","answer":["sight"],"explanation":"The lecture singles out sight."},{"n":35,"prompt":"Making a good ___ depended on memory.","answer":["speech"],"explanation":"Public speaking relied on a strong memory."},{"n":36,"prompt":"People also have their ___ memory.","answer":["natural"],"explanation":"Cicero contrasted developed artificial memory with natural memory."},{"n":37,"prompt":"Scholastics used memory techniques to teach ___.","answer":["religion"],"explanation":"They instructed pupils about religion."},{"n":38,"prompt":"In the 17th century, people believed ___ could provide explanations.","answer":["science"],"explanation":"Science was believed to answer human questions."},{"n":39,"prompt":"Schoolchildren learned facts such as ___ through repetition.","answer":["dates"],"explanation":"The example given is repeatedly learning dates."},{"n":40,"prompt":"‘S’ worked as a ___.","answer":["journalist"],"explanation":"The research subject S was a journalist."}];
+const norm=value=>String(value??'').trim().toLowerCase().replace(/[,£]/g,'');
+document.getElementById('finish-btn').onclick=()=>{
+ let score=0,total=0;
+ document.body.classList.add('review');
+ document.querySelectorAll('.q').forEach((row,index)=>{
+  const q=data[index],name='q'+String(q.n).replace('-','_');
+  const values=q.options?[...document.querySelectorAll('[name="'+name+'"]:checked')].map(el=>el.value):[document.querySelector('[name="'+name+'"]')?.value||''];
+  const ok=q.answer.length===values.length&&q.answer.every(answer=>values.some(value=>norm(value)===norm(answer)));
+  total+=q.multiple?q.answer.length:1;score+=ok?(q.multiple?q.answer.length:1):0;
+  const box=row.querySelector('.answer'),label=box.querySelector('strong');box.classList.toggle('bad',!ok);label.className=ok?'correct':'incorrect';label.textContent=ok?'✓ 正确':'✗ 需要复习';
+  row.querySelectorAll('input').forEach(input=>input.disabled=true);
+ });
+ window.parent.postMessage({type:'tingjian:score',exerciseId:"p4-01",score,total,practicedAt:new Date().toISOString()},'*');
+};
+document.getElementById('reset').onclick=()=>{document.body.classList.remove('review');document.querySelectorAll('input').forEach(input=>{input.disabled=false;input.checked=false;if(input.type==='text')input.value=''});};
+</script></body></html>

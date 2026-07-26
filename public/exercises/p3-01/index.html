@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Handwriting</title><style>
+:root{--ink:#183c38;--green:#0e5a4f;--mint:#e4efeb;--paper:#fffdf8;--line:#d8ded9;--red:#b94a2d}
+*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:var(--ink);font:15px/1.65 Arial,sans-serif}
+header{position:sticky;top:0;z-index:2;padding:18px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
+header strong{display:block;font:24px Georgia,serif}header small{color:#70827c}
+main{max-width:920px;margin:auto;padding:24px 28px 100px}audio{width:100%;margin:0 0 22px}
+.intro{padding:17px 20px;border-left:3px solid #eb6b43;background:var(--mint)}
+section{margin-top:24px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+h2{margin:0 0 16px;font:22px Georgia,serif}.q{padding:18px 0;border-top:1px solid #e5e8e5}.q:first-of-type{border-top:0}
+.q-title{display:flex;gap:10px}.num{min-width:42px;color:#eb6b43;font-weight:bold}
+input[type=text]{width:220px;max-width:100%;margin:12px 0 0 52px;padding:9px 10px;border:1px solid #8ca29b;border-radius:4px}
+label{display:block;margin:8px 0 0 52px}.answer{display:none;margin:13px 0 0 52px;padding:11px 13px;background:#edf6f2;border-left:3px solid var(--green)}
+.answer.bad{background:#fff0eb;border-color:var(--red)}body.review .answer{display:block}.correct{color:var(--green)}.incorrect{color:var(--red)}
+footer{position:fixed;right:0;bottom:0;left:0;display:flex;justify-content:flex-end;gap:10px;padding:13px 28px;background:var(--paper);border-top:1px solid var(--line)}
+button{padding:10px 18px;border:1px solid var(--green);border-radius:4px;background:white;color:var(--green);font-weight:bold;cursor:pointer}button.primary{background:var(--green);color:white}
+@media(max-width:600px){header,main,footer{padding-left:14px;padding-right:14px}input[type=text],label,.answer{margin-left:0}}
+</style></head><body>
+<header><strong>Handwriting</strong><small>Choose the correct answer. Questions 21-24 require TWO answers.</small></header>
+<main><audio controls preload="metadata" src="audio.m4a"></audio><div class="intro">Choose the correct answer. Questions 21-24 require TWO answers.</div>
+<section><h2>Questions 21-30</h2><div class="q" data-index="0">
+<div class="q-title"><span class="num">21-22</span><span>Which TWO benefits of learning to write surprised both students?</span></div>
+<label><input type="checkbox" name="q21_22" value="A"> A. improved fine motor skills</label><label><input type="checkbox" name="q21_22" value="B"> B. improved memory</label><label><input type="checkbox" name="q21_22" value="C"> C. improved concentration</label><label><input type="checkbox" name="q21_22" value="D"> D. improved imagination</label><label><input type="checkbox" name="q21_22" value="E"> E. improved spatial awareness</label>
+<div class="answer"><strong></strong><br>答案：C / E<br>Correct answers: C and E.</div></div><div class="q" data-index="1">
+<div class="q-title"><span class="num">23-24</span><span>Which TWO handwriting problems for children with dyspraxia are easiest to correct?</span></div>
+<label><input type="checkbox" name="q23_24" value="A"> A. incorrect letter spacing</label><label><input type="checkbox" name="q23_24" value="B"> B. not writing in a straight line</label><label><input type="checkbox" name="q23_24" value="C"> C. too much pressure</label><label><input type="checkbox" name="q23_24" value="D"> D. confusing shapes / writing slowly</label><label><input type="checkbox" name="q23_24" value="E"> E. holding the pencil incorrectly</label>
+<div class="answer"><strong></strong><br>答案：A / C<br>Correct answers: A and C.</div></div><div class="q" data-index="2">
+<div class="q-title"><span class="num">25</span><span>Using laptops to teach writing to children with dyslexia…</span></div>
+<label><input type="radio" name="q25" value="A"> A. lacks motivation</label><label><input type="radio" name="q25" value="B"> B. produces quick fluency</label><label><input type="radio" name="q25" value="C"> C. produces a more positive reaction to mistakes</label>
+<div class="answer"><strong></strong><br>答案：C<br>Correct option: C.</div></div><div class="q" data-index="3">
+<div class="q-title"><span class="num">26</span><span>The woman thinks that…</span></div>
+<label><input type="radio" name="q26" value="A"> A. cursive disadvantages some children</label><label><input type="radio" name="q26" value="B"> B. print links to lower performance</label><label><input type="radio" name="q26" value="C"> C. most UK teachers prefer tradition</label>
+<div class="answer"><strong></strong><br>答案：A<br>Correct option: A.</div></div><div class="q" data-index="4">
+<div class="q-title"><span class="num">27</span><span>What impact does poor handwriting have on exams?</span></div>
+<label><input type="radio" name="q27" value="A"> A. evidence suggests grades are affected</label><label><input type="radio" name="q27" value="B"> B. neatness matters less now</label><label><input type="radio" name="q27" value="C"> C. candidates write shorter answers</label>
+<div class="answer"><strong></strong><br>答案：A<br>Correct option: A.</div></div><div class="q" data-index="5">
+<div class="q-title"><span class="num">28</span><span>What prediction is made about handwriting?</span></div>
+<label><input type="radio" name="q28" value="A"> A. touch typing will come first</label><label><input type="radio" name="q28" value="B"> B. children will continue handwriting</label><label><input type="radio" name="q28" value="C"> C. all handwriting will be digital</label>
+<div class="answer"><strong></strong><br>答案：B<br>Correct option: B.</div></div><div class="q" data-index="6">
+<div class="q-title"><span class="num">29</span><span>Digital reliance has made it difficult for the woman to…</span></div>
+<label><input type="radio" name="q29" value="A"> A. take detailed notes</label><label><input type="radio" name="q29" value="B"> B. spell and punctuate</label><label><input type="radio" name="q29" value="C"> C. read old documents</label>
+<div class="answer"><strong></strong><br>答案：B<br>Correct option: B.</div></div><div class="q" data-index="7">
+<div class="q-title"><span class="num">30</span><span>How do the students feel about their own handwriting?</span></div>
+<label><input type="radio" name="q30" value="A"> A. legible but not stylish</label><label><input type="radio" name="q30" value="B"> B. children will continue handwriting</label><label><input type="radio" name="q30" value="C"> C. embarrassed that the habit lapsed</label>
+<div class="answer"><strong></strong><br>答案：C<br>Correct option: C.</div></div></section>
+</main><footer><button id="reset">重新作答</button><button class="primary" id="finish-btn">提交并查看答案</button></footer>
+<script>
+const data=[{"n":"21-22","prompt":"Which TWO benefits of learning to write surprised both students?","multiple":true,"options":["A. improved fine motor skills","B. improved memory","C. improved concentration","D. improved imagination","E. improved spatial awareness"],"answer":["C","E"],"explanation":"Correct answers: C and E."},{"n":"23-24","prompt":"Which TWO handwriting problems for children with dyspraxia are easiest to correct?","multiple":true,"options":["A. incorrect letter spacing","B. not writing in a straight line","C. too much pressure","D. confusing shapes / writing slowly","E. holding the pencil incorrectly"],"answer":["A","C"],"explanation":"Correct answers: A and C."},{"n":25,"prompt":"Using laptops to teach writing to children with dyslexia…","options":["A. lacks motivation","B. produces quick fluency","C. produces a more positive reaction to mistakes"],"answer":["C"],"explanation":"Correct option: C."},{"n":26,"prompt":"The woman thinks that…","options":["A. cursive disadvantages some children","B. print links to lower performance","C. most UK teachers prefer tradition"],"answer":["A"],"explanation":"Correct option: A."},{"n":27,"prompt":"What impact does poor handwriting have on exams?","options":["A. evidence suggests grades are affected","B. neatness matters less now","C. candidates write shorter answers"],"answer":["A"],"explanation":"Correct option: A."},{"n":28,"prompt":"What prediction is made about handwriting?","options":["A. touch typing will come first","B. children will continue handwriting","C. all handwriting will be digital"],"answer":["B"],"explanation":"Correct option: B."},{"n":29,"prompt":"Digital reliance has made it difficult for the woman to…","options":["A. take detailed notes","B. spell and punctuate","C. read old documents"],"answer":["B"],"explanation":"Correct option: B."},{"n":30,"prompt":"How do the students feel about their own handwriting?","options":["A. legible but not stylish","B. children will continue handwriting","C. embarrassed that the habit lapsed"],"answer":["C"],"explanation":"Correct option: C."}];
+const norm=value=>String(value??'').trim().toLowerCase().replace(/[,£]/g,'');
+document.getElementById('finish-btn').onclick=()=>{
+ let score=0,total=0;
+ document.body.classList.add('review');
+ document.querySelectorAll('.q').forEach((row,index)=>{
+  const q=data[index],name='q'+String(q.n).replace('-','_');
+  const values=q.options?[...document.querySelectorAll('[name="'+name+'"]:checked')].map(el=>el.value):[document.querySelector('[name="'+name+'"]')?.value||''];
+  const ok=q.answer.length===values.length&&q.answer.every(answer=>values.some(value=>norm(value)===norm(answer)));
+  total+=q.multiple?q.answer.length:1;score+=ok?(q.multiple?q.answer.length:1):0;
+  const box=row.querySelector('.answer'),label=box.querySelector('strong');box.classList.toggle('bad',!ok);label.className=ok?'correct':'incorrect';label.textContent=ok?'✓ 正确':'✗ 需要复习';
+  row.querySelectorAll('input').forEach(input=>input.disabled=true);
+ });
+ window.parent.postMessage({type:'tingjian:score',exerciseId:"p3-01",score,total,practicedAt:new Date().toISOString()},'*');
+};
+document.getElementById('reset').onclick=()=>{document.body.classList.remove('review');document.querySelectorAll('input').forEach(input=>{input.disabled=false;input.checked=false;if(input.type==='text')input.value=''});};
+</script></body></html>

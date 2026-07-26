@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="75 篇雅思听力单项练习、即时判分、答案解析与练习记录。">
+  <title>听见 · IELTS Listening Library</title>
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <main class="library-app">
+    <header class="library-header">
+      <div class="brand">
+        <span class="brand-mark">听</span>
+        <div><strong>听见</strong><small>IELTS Listening Library</small></div>
+      </div>
+      <div class="header-note">非 IELTS 官方学习工具</div>
+      <div class="header-progress"><span>已练习</span><strong id="practiced-count">0<small>/75</small></strong></div>
+    </header>
+
+    <button class="mobile-menu" id="mobile-menu">☰ 选择练习</button>
+
+    <div class="library-layout">
+      <aside class="exercise-sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div><strong>单项练习</strong><small>选择 Part 和题目</small></div>
+          <button class="sidebar-close" id="sidebar-close">×</button>
+        </div>
+        <div class="part-tabs" id="part-tabs"></div>
+        <label class="search"><span>⌕</span><input id="search" placeholder="搜索 P1 题目"></label>
+        <div class="exercise-list" id="exercise-list"></div>
+      </aside>
+
+      <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="关闭侧边栏"></button>
+
+      <section class="practice-main">
+        <div class="practice-heading">
+          <div><span id="exercise-kicker">P1 · 第 1 题</span><h1 id="exercise-title">正在加载题库…</h1></div>
+          <div class="heading-meta" id="heading-meta"><small>练习状态</small><strong class="new-label">未练习</strong></div>
+        </div>
+        <div class="practice-frame"><iframe id="practice-frame" title="听力练习" allow="autoplay"></iframe></div>
+      </section>
+    </div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
