@@ -53,8 +53,12 @@ function renderSelected() {
   const result = scores[item.id];
   $("#exercise-kicker").textContent = `${item.part} · 第 ${item.ordinal} 题`;
   $("#exercise-title").textContent = item.title;
-  $("#practice-frame").title = `${item.part} 第 ${item.ordinal} 题：${item.title}`;
-  $("#practice-frame").src = new URL(item.href, window.location.href).href;
+  const frame = $("#practice-frame");
+  frame.title = `${item.part} 第 ${item.ordinal} 题：${item.title}`;
+  if (frame.dataset.exerciseId !== item.id) {
+    frame.dataset.exerciseId = item.id;
+    frame.src = new URL(item.href, window.location.href).href;
+  }
   $("#heading-meta").innerHTML = result
     ? `<small>上次得分</small><strong>${result.score}<span>/${result.total}</span></strong>`
     : '<small>练习状态</small><strong class="new-label">未练习</strong>';
