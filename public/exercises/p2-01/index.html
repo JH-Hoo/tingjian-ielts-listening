@@ -1,71 +1,226 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shampoo Marketing Project</title><style>
-:root{--ink:#183c38;--green:#0e5a4f;--mint:#e4efeb;--paper:#fffdf8;--line:#d8ded9;--red:#b94a2d}
-*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:var(--ink);font:15px/1.65 Arial,sans-serif}
-header{position:sticky;top:0;z-index:2;padding:18px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
-header strong{display:block;font:24px Georgia,serif}header small{color:#70827c}
-main{max-width:920px;margin:auto;padding:24px 28px 100px}audio{width:100%;margin:0 0 22px}
-.intro{padding:17px 20px;border-left:3px solid #eb6b43;background:var(--mint)}
-section{margin-top:24px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:8px}
-h2{margin:0 0 16px;font:22px Georgia,serif}.q{padding:18px 0;border-top:1px solid #e5e8e5}.q:first-of-type{border-top:0}
-.q-title{display:flex;gap:10px}.num{min-width:42px;color:#eb6b43;font-weight:bold}
-input[type=text]{width:220px;max-width:100%;margin:12px 0 0 52px;padding:9px 10px;border:1px solid #8ca29b;border-radius:4px}
-label{display:block;margin:8px 0 0 52px}.answer{display:none;margin:13px 0 0 52px;padding:11px 13px;background:#edf6f2;border-left:3px solid var(--green)}
-.answer.bad{background:#fff0eb;border-color:var(--red)}body.review .answer{display:block}.correct{color:var(--green)}.incorrect{color:var(--red)}
-footer{position:fixed;right:0;bottom:0;left:0;display:flex;justify-content:flex-end;gap:10px;padding:13px 28px;background:var(--paper);border-top:1px solid var(--line)}
-button{padding:10px 18px;border:1px solid var(--green);border-radius:4px;background:white;color:var(--green);font-weight:bold;cursor:pointer}button.primary{background:var(--green);color:white}
-@media(max-width:600px){header,main,footer{padding-left:14px;padding-right:14px}input[type=text],label,.answer{margin-left:0}}
-</style></head><body>
-<header><strong>Shampoo Marketing Project</strong><small>Choose the correct answer for each question.</small></header>
-<main><audio controls preload="metadata" src="audio.m4a"></audio><div class="intro">Choose the correct answer for each question.</div>
-<section><h2>Questions 21-30</h2><div class="q" data-index="0">
-<div class="q-title"><span class="num">21</span><span>Over time, shampoo has become…</span></div>
-<label><input type="radio" name="q21" value="A"> A. a cheaper product</label><label><input type="radio" name="q21" value="B"> B. more hygienic in its effects</label><label><input type="radio" name="q21" value="C"> C. a different kind of commodity</label>
-<div class="answer"><strong></strong><br>答案：C<br>Correct option: C.</div></div><div class="q" data-index="1">
-<div class="q-title"><span class="num">22</span><span>What does Janet say about ‘bad hair days’?</span></div>
-<label><input type="radio" name="q22" value="A"> A. They really do exist</label><label><input type="radio" name="q22" value="B"> B. Women worry about them more than men</label><label><input type="radio" name="q22" value="C"> C. Their name is inaccurate</label>
-<div class="answer"><strong></strong><br>答案：A<br>Correct option: A.</div></div><div class="q" data-index="2">
-<div class="q-title"><span class="num">23</span><span>What do they say about chemicals used in shampoos?</span></div>
-<label><input type="radio" name="q23" value="A"> A. All shampoos contain the same chemicals</label><label><input type="radio" name="q23" value="B"> B. The chemicals are believed to be dangerous</label><label><input type="radio" name="q23" value="C"> C. Their presence is rarely publicised</label>
-<div class="answer"><strong></strong><br>答案：C<br>Correct option: C.</div></div><div class="q" data-index="3">
-<div class="q-title"><span class="num">24</span><span>Printing directly onto shampoo bottles…</span></div>
-<label><input type="radio" name="q24" value="A"> A. costs more</label><label><input type="radio" name="q24" value="B"> B. looks less attractive</label><label><input type="radio" name="q24" value="C"> C. takes much longer</label>
-<div class="answer"><strong></strong><br>答案：B<br>Correct option: B.</div></div><div class="q" data-index="4">
-<div class="q-title"><span class="num">25</span><span>Which environmental issue do they want to investigate?</span></div>
-<label><input type="radio" name="q25" value="A"> A. bottle appearance</label><label><input type="radio" name="q25" value="B"> B. variations in bottle weight</label><label><input type="radio" name="q25" value="C"> C. source of recycled plastic</label>
-<div class="answer"><strong></strong><br>答案：B<br>Correct option: B.</div></div><div class="q" data-index="5">
-<div class="q-title"><span class="num">26</span><span>Michael bases his shampoo purchase on…</span></div>
-<label><input type="radio" name="q26" value="A"> A. brand loyalty</label><label><input type="radio" name="q26" value="B"> B. value for money</label><label><input type="radio" name="q26" value="C"> C. trying new products</label>
-<div class="answer"><strong></strong><br>答案：C<br>Correct option: C.</div></div><div class="q" data-index="6">
-<div class="q-title"><span class="num">27</span><span>Main advertising focus of Zing</span></div>
-<label><input type="radio" name="q27" value="A"> A. relaxation</label><label><input type="radio" name="q27" value="B"> B. enviable lifestyle</label><label><input type="radio" name="q27" value="C"> C. natural ingredients</label><label><input type="radio" name="q27" value="D"> D. masculine image</label><label><input type="radio" name="q27" value="E"> E. reliability</label><label><input type="radio" name="q27" value="F"> F. romantic interest</label><label><input type="radio" name="q27" value="G"> G. celebrities</label>
-<div class="answer"><strong></strong><br>答案：B<br>Correct option: B, enviable lifestyle.</div></div><div class="q" data-index="7">
-<div class="q-title"><span class="num">28</span><span>Main advertising focus of Splash</span></div>
-<label><input type="radio" name="q28" value="A"> A. relaxation</label><label><input type="radio" name="q28" value="B"> B. enviable lifestyle</label><label><input type="radio" name="q28" value="C"> C. natural ingredients</label><label><input type="radio" name="q28" value="D"> D. masculine image</label><label><input type="radio" name="q28" value="E"> E. reliability</label><label><input type="radio" name="q28" value="F"> F. romantic interest</label><label><input type="radio" name="q28" value="G"> G. celebrities</label>
-<div class="answer"><strong></strong><br>答案：F<br>Correct option: F, romantic interest.</div></div><div class="q" data-index="8">
-<div class="q-title"><span class="num">29</span><span>Main advertising focus of Just go</span></div>
-<label><input type="radio" name="q29" value="A"> A. relaxation</label><label><input type="radio" name="q29" value="B"> B. enviable lifestyle</label><label><input type="radio" name="q29" value="C"> C. natural ingredients</label><label><input type="radio" name="q29" value="D"> D. masculine image</label><label><input type="radio" name="q29" value="E"> E. reliability</label><label><input type="radio" name="q29" value="F"> F. romantic interest</label><label><input type="radio" name="q29" value="G"> G. celebrities</label>
-<div class="answer"><strong></strong><br>答案：E<br>Correct option: E, product reliability.</div></div><div class="q" data-index="9">
-<div class="q-title"><span class="num">30</span><span>Main advertising focus of Brozene</span></div>
-<label><input type="radio" name="q30" value="A"> A. relaxation</label><label><input type="radio" name="q30" value="B"> B. enviable lifestyle</label><label><input type="radio" name="q30" value="C"> C. natural ingredients</label><label><input type="radio" name="q30" value="D"> D. masculine image</label><label><input type="radio" name="q30" value="E"> E. reliability</label><label><input type="radio" name="q30" value="F"> F. romantic interest</label><label><input type="radio" name="q30" value="G"> G. celebrities</label>
-<div class="answer"><strong></strong><br>答案：A<br>Correct option: A, relaxation.</div></div></section>
-</main><footer><button id="reset">重新作答</button><button class="primary" id="finish-btn">提交并查看答案</button></footer>
-<script>
-const data=[{"n":21,"prompt":"Over time, shampoo has become…","options":["A. a cheaper product","B. more hygienic in its effects","C. a different kind of commodity"],"answer":["C"],"explanation":"Correct option: C."},{"n":22,"prompt":"What does Janet say about ‘bad hair days’?","options":["A. They really do exist","B. Women worry about them more than men","C. Their name is inaccurate"],"answer":["A"],"explanation":"Correct option: A."},{"n":23,"prompt":"What do they say about chemicals used in shampoos?","options":["A. All shampoos contain the same chemicals","B. The chemicals are believed to be dangerous","C. Their presence is rarely publicised"],"answer":["C"],"explanation":"Correct option: C."},{"n":24,"prompt":"Printing directly onto shampoo bottles…","options":["A. costs more","B. looks less attractive","C. takes much longer"],"answer":["B"],"explanation":"Correct option: B."},{"n":25,"prompt":"Which environmental issue do they want to investigate?","options":["A. bottle appearance","B. variations in bottle weight","C. source of recycled plastic"],"answer":["B"],"explanation":"Correct option: B."},{"n":26,"prompt":"Michael bases his shampoo purchase on…","options":["A. brand loyalty","B. value for money","C. trying new products"],"answer":["C"],"explanation":"Correct option: C."},{"n":27,"prompt":"Main advertising focus of Zing","options":["A. relaxation","B. enviable lifestyle","C. natural ingredients","D. masculine image","E. reliability","F. romantic interest","G. celebrities"],"answer":["B"],"explanation":"Correct option: B, enviable lifestyle."},{"n":28,"prompt":"Main advertising focus of Splash","options":["A. relaxation","B. enviable lifestyle","C. natural ingredients","D. masculine image","E. reliability","F. romantic interest","G. celebrities"],"answer":["F"],"explanation":"Correct option: F, romantic interest."},{"n":29,"prompt":"Main advertising focus of Just go","options":["A. relaxation","B. enviable lifestyle","C. natural ingredients","D. masculine image","E. reliability","F. romantic interest","G. celebrities"],"answer":["E"],"explanation":"Correct option: E, product reliability."},{"n":30,"prompt":"Main advertising focus of Brozene","options":["A. relaxation","B. enviable lifestyle","C. natural ingredients","D. masculine image","E. reliability","F. romantic interest","G. celebrities"],"answer":["A"],"explanation":"Correct option: A, relaxation."}];
-const norm=value=>String(value??'').trim().toLowerCase().replace(/[,£]/g,'');
-document.getElementById('finish-btn').onclick=()=>{
- let score=0,total=0;
- document.body.classList.add('review');
- document.querySelectorAll('.q').forEach((row,index)=>{
-  const q=data[index],name='q'+String(q.n).replace('-','_');
-  const values=q.options?[...document.querySelectorAll('[name="'+name+'"]:checked')].map(el=>el.value):[document.querySelector('[name="'+name+'"]')?.value||''];
-  const ok=q.answer.length===values.length&&q.answer.every(answer=>values.some(value=>norm(value)===norm(answer)));
-  total+=q.multiple?q.answer.length:1;score+=ok?(q.multiple?q.answer.length:1):0;
-  const box=row.querySelector('.answer'),label=box.querySelector('strong');box.classList.toggle('bad',!ok);label.className=ok?'correct':'incorrect';label.textContent=ok?'✓ 正确':'✗ 需要复习';
-  row.querySelectorAll('input').forEach(input=>input.disabled=true);
- });
- window.parent.postMessage({type:'tingjian:score',exerciseId:"p2-01",score,total,practicedAt:new Date().toISOString()},'*');
-};
-document.getElementById('reset').onclick=()=>{document.body.classList.remove('review');document.querySelectorAll('input').forEach(input=>{input.disabled=false;input.checked=false;if(input.type==='text')input.value=''});};
-</script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shampoo Marketing Project</title>
+  <style>
+    :root{--ink:#173c37;--green:#0e5a4f;--green-2:#dfeee9;--paper:#fffdf8;--cream:#f5f2ea;--line:#d4ddd8;--orange:#e96842;--red:#a83d2c;--red-bg:#fff1ec}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.65 Arial,"Noto Sans SC",sans-serif}
+    button,input,select{font:inherit;color:inherit}button{cursor:pointer}
+    .page-header{position:sticky;z-index:10;top:0;padding:16px 24px;background:rgba(255,253,248,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .page-header>div{max-width:980px;margin:auto}.page-header strong{display:block;font:700 24px/1.25 Georgia,serif}.page-header span{display:block;margin-top:4px;color:#667b75;font-size:12px}.page-header b{color:var(--orange)}
+    main{max-width:980px;margin:auto;padding:22px 24px 110px}.audio-wrap{position:sticky;z-index:8;top:88px;margin-bottom:18px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:rgba(245,242,234,.96);box-shadow:0 5px 20px rgba(28,55,48,.08)}audio{display:block;width:100%;height:38px}
+    .paper-block{margin:18px 0;padding:28px 34px;border:1px solid var(--line);border-radius:9px;background:var(--paper);box-shadow:0 9px 28px rgba(31,58,50,.06)}
+    h2{margin:0 0 22px;text-align:center;font:700 22px/1.3 Georgia,serif}.subheading,.flow-title{margin-top:26px;text-align:left;font-size:18px}.section-instruction{display:grid;gap:2px;margin-bottom:20px}.section-instruction b{font-size:16px}.section-instruction span{color:#516b64;font-size:13px}
+    .question-card{padding:20px 0;border-top:1px solid #e5e9e6}.question-card:first-of-type{border-top:0}.question-title{display:flex;align-items:flex-start;gap:11px}.question-title h3{margin:0;font-size:15px;line-height:1.55}.question-number{display:inline-grid;flex:0 0 auto;min-width:34px;height:28px;padding:0 7px;place-items:center;border-radius:14px;background:var(--green);color:#fff;font-size:12px;font-weight:800}
+    .choice-list{display:grid;gap:7px;margin:13px 0 0 45px}.choice-list label{display:grid;grid-template-columns:18px 28px minmax(0,1fr);align-items:start;gap:7px;padding:7px 9px;border:1px solid transparent;border-radius:6px;cursor:pointer}.choice-list label:hover{border-color:#bfd1ca;background:#f4f8f6}.choice-list input{margin:4px 0 0}.choice-letter{font-weight:800}
+    .answer-panel{display:none;margin:14px 0 0 45px;padding:13px 15px;border-left:4px solid var(--green);background:#edf6f2}.review .answer-panel{display:block}.answer-panel.wrong{border-color:var(--red);background:var(--red-bg)}.answer-heading{display:flex;flex-wrap:wrap;gap:8px 15px}.answer-heading span{font-weight:700}.answer-question{min-width:30px;color:var(--orange)}.result-label{color:var(--green)}.answer-panel.wrong .result-label{color:var(--red)}.answer-panel p{margin:8px 0 0}.answer-panel p b{display:inline-block;margin-right:8px;color:#60756f;font-size:12px}.transcript{color:#385a52}
+    .table-wrap{overflow-x:auto}.tour-table{width:100%;border-collapse:collapse}.tour-table th,.tour-table td{padding:16px 15px;border:1px solid #aebeb8;vertical-align:top;text-align:left}.tour-table thead th{background:var(--green);color:#fff;text-align:center}.tour-table tbody th{width:19%;background:#edf4f1}.tour-table tbody td:nth-child(2){min-width:480px}.tour-table tbody td:last-child{width:15%;white-space:nowrap;text-align:center}.tour-table ul{margin:0;padding-left:20px}.tour-table li+li{margin-top:10px}.example-label{display:block;margin-bottom:5px;color:#6b7d77;font-size:11px;font-weight:500}
+    .blank{display:inline-flex;align-items:center;gap:5px;margin:0 3px;vertical-align:middle}.blank-number{color:var(--orange);font-size:11px;font-weight:800}.blank input{width:118px;height:32px;padding:3px 7px;border:0;border-bottom:2px solid #5a726a;background:#f8f8f3;outline:0}.blank input:focus{border-color:var(--orange);background:#fff}.select-blank select{width:54px;height:32px;border:1px solid #799188;border-radius:4px;background:#fff}
+    .solution-list>h2{display:none;margin-top:30px}.review .solution-list>h2{display:block}.inline-result{display:none}.review .inline-result{display:block}.inline-result .answer-panel{margin-left:0}
+    .option-bank{max-width:700px;margin:18px auto;padding:18px 20px;border:2px solid #adc1b9;border-radius:7px;background:#f5f8f6}.option-bank>strong{display:block;margin-bottom:10px;text-align:center}.option-bank>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px}.option-bank span{display:flex;gap:9px}.option-bank b{color:var(--orange)}
+    .matching-list{max-width:700px;margin:auto}.matching-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid #e3e8e5}.matching-row>div:first-child{display:flex;align-items:center;gap:12px}.matching-row .answer-panel{grid-column:1/-1;margin:4px 0 0}
+    .multi-question .section-instruction{margin-bottom:13px}.multi-question+.multi-question{margin-top:15px}.multi-question .question-number{min-width:58px}
+    .flow-chart{max-width:760px;margin:auto}.flow-step{position:relative;margin-bottom:28px;padding:19px 22px;border:1px solid #b9c9c3;border-radius:8px;background:#f8faf8}.flow-step p{margin:0}.flow-step .answer-panel{margin-left:0}.flow-arrow{position:absolute;right:50%;bottom:-31px;color:var(--orange);font-size:22px;font-weight:800}
+    .memory-paper>h2{font-size:25px}.note-section{margin:22px 0}.note-section h3{display:inline-block;margin:0 0 8px;padding:3px 10px;border-left:4px solid var(--orange);background:#f1f5f2;font-size:16px}.note-section ul{margin:0;padding-left:30px}.note-section li+li{margin-top:10px}
+    .vocabulary{margin:18px 0;padding:16px 20px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}.vocabulary summary{font-weight:800;cursor:pointer}.vocabulary dl{margin:15px 0 0}.vocabulary dl>div{display:grid;grid-template-columns:minmax(180px,1fr) 1fr;gap:18px;padding:7px 0;border-top:1px solid #e7e9e6}.vocabulary dt{font-weight:700}.vocabulary dd{margin:0;color:#5d716b}
+    .page-footer{position:fixed;z-index:11;right:0;bottom:0;left:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;border-top:1px solid var(--line);background:rgba(255,253,248,.98)}.score-summary{font-weight:800}.score-summary:empty{display:none}.actions{display:flex;gap:9px;margin-left:auto}.actions button{padding:9px 16px;border:1px solid var(--green);border-radius:5px;background:#fff;color:var(--green);font-weight:800}.actions .primary{background:var(--green);color:#fff}
+    .review input,.review select{pointer-events:none}.review .gradable.correct{--status:var(--green)}.review .gradable.incorrect{--status:var(--red)}
+    @media(max-width:700px){.page-header{padding:12px 14px}.page-header strong{font-size:18px}.page-header span{font-size:10px}main{padding:12px 8px 100px}.audio-wrap{top:69px;margin-bottom:10px;padding:8px}.paper-block{padding:20px 14px}.choice-list{margin-left:0}.answer-panel{margin-left:0}.option-bank>div{grid-template-columns:1fr}.tour-table th,.tour-table td{padding:11px 10px}.blank input{width:92px}.page-footer{padding:9px 10px}.score-summary{font-size:12px}.actions button{padding:8px 11px}.vocabulary dl>div{grid-template-columns:1fr;gap:2px}}
+  </style>
+</head>
+<body>
+  <header class="page-header"><div><strong>Shampoo Marketing Project</strong><span>Questions 21–30 · <b>Choose the correct letter for each answer.</b></span></div></header>
+  <main>
+    <div class="audio-wrap"><audio controls preload="metadata" src="audio.m4a"></audio></div>
+
+  <section class="paper-block">
+    <div class="section-instruction"><b>Questions 21–26</b><span>Choose the correct letter, A, B, or C.</span></div>
+    <h2>Shampoo Marketing Project</h2>
+
+  <article class="question-card gradable" data-type="radio" data-q="21" data-answer="C" data-weight="1">
+    <div class="question-title"><span class="question-number">21</span><h3>Janet says that over time, shampoo has become</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q21" value="A"><span class="choice-letter">A</span><span>a cheaper product.</span></label><label><input type="radio" name="q21" value="B"><span class="choice-letter">B</span><span>more hygienic in its effects.</span></label><label><input type="radio" name="q21" value="C"><span class="choice-letter">C</span><span>a different kind of commodity.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q21</span><strong class="result-label"></strong><span>答案：C</span></div>
+
+    <p><b>解析</b>录音说它从一种经济实惠的清洁用品，逐渐变成 beauty product，说明商品属性发生了变化，而不是单纯更便宜或更卫生。</p>
+  </div>
+  </article>
+  <article class="question-card gradable" data-type="radio" data-q="22" data-answer="A" data-weight="1">
+    <div class="question-title"><span class="question-number">22</span><h3>What does Janet say about ‘bad hair days’?</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q22" value="A"><span class="choice-letter">A</span><span>They really do exist.</span></label><label><input type="radio" name="q22" value="B"><span class="choice-letter">B</span><span>Women worry about them more than men.</span></label><label><input type="radio" name="q22" value="C"><span class="choice-letter">C</span><span>Their name is inaccurate.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q22</span><strong class="result-label"></strong><span>答案：A</span></div>
+
+    <p><b>解析</b>研究表明 bad hair days 并非想象出来的，而且男女受到的影响相同。因此 A 正确，B 被 equally affected 排除。</p>
+  </div>
+  </article>
+  <article class="question-card gradable" data-type="radio" data-q="23" data-answer="C" data-weight="1">
+    <div class="question-title"><span class="question-number">23</span><h3>What do Janet and Michael say about the chemicals used in shampoos?</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q23" value="A"><span class="choice-letter">A</span><span>All shampoos contain the same chemicals.</span></label><label><input type="radio" name="q23" value="B"><span class="choice-letter">B</span><span>The chemicals are believed to be dangerous.</span></label><label><input type="radio" name="q23" value="C"><span class="choice-letter">C</span><span>The presence of the chemicals is rarely publicised.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q23</span><strong class="result-label"></strong><span>答案：C</span></div>
+
+    <p><b>解析</b>他们列举常见化学成分，并指出 manufacturers keep it quiet、包装上对此保持沉默，对应 rarely publicised。</p>
+  </div>
+  </article>
+  <article class="question-card gradable" data-type="radio" data-q="24" data-answer="B" data-weight="1">
+    <div class="question-title"><span class="question-number">24</span><h3>According to Janet, printing directly onto shampoo bottles, rather than onto labels,</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q24" value="A"><span class="choice-letter">A</span><span>costs more.</span></label><label><input type="radio" name="q24" value="B"><span class="choice-letter">B</span><span>looks less attractive.</span></label><label><input type="radio" name="q24" value="C"><span class="choice-letter">C</span><span>takes a lot longer.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q24</span><strong class="result-label"></strong><span>答案：B</span></div>
+
+    <p><b>解析</b>直接印瓶身既更便宜又更快，但厂家认为它不能增强视觉效果、显得廉价，所以问题在外观。</p>
+  </div>
+  </article>
+  <article class="question-card gradable" data-type="radio" data-q="25" data-answer="B" data-weight="1">
+    <div class="question-title"><span class="question-number">25</span><h3>With regard to environmental issues, Michael and Janet want to investigate</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q25" value="A"><span class="choice-letter">A</span><span>the appearance of shampoo bottles.</span></label><label><input type="radio" name="q25" value="B"><span class="choice-letter">B</span><span>variations in the weight of shampoo bottles.</span></label><label><input type="radio" name="q25" value="C"><span class="choice-letter">C</span><span>the source of recycled plastic in shampoo bottles.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q25</span><strong class="result-label"></strong><span>答案：B</span></div>
+
+    <p><b>解析</b>他们提出厂家可以通过减轻包装重量来提升环保性，并决定调查不同厂家是否真的这样做。</p>
+  </div>
+  </article>
+  <article class="question-card gradable" data-type="radio" data-q="26" data-answer="C" data-weight="1">
+    <div class="question-title"><span class="question-number">26</span><h3>Michael bases his own shampoo purchase decisions on his</h3></div>
+    <div class="choice-list"><label><input type="radio" name="q26" value="A"><span class="choice-letter">A</span><span>loyalty to certain brands.</span></label><label><input type="radio" name="q26" value="B"><span class="choice-letter">B</span><span>desire to get value for money.</span></label><label><input type="radio" name="q26" value="C"><span class="choice-letter">C</span><span>willingness to try new products.</span></label></div>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q26</span><strong class="result-label"></strong><span>答案：C</span></div>
+
+    <p><b>解析</b>Michael 不信任所谓半价促销，也不固定购买少数品牌；遇到没见过的牌子，他通常愿意试一试。</p>
+  </div>
+  </article>
+  </section>
+  <section class="paper-block">
+    <div class="section-instruction"><b>Questions 27–30</b><span>According to the speakers, what is the main advertising focus of each of the following shampoo advertisements?</span><span>Choose FOUR answers from the box and write the correct letter, A–G, next to questions 27–30.</span></div>
+
+  <aside class="option-bank">
+    <strong>Advertising focuses</strong>
+    <div><span><b>A</b>link to relaxation</span><span><b>B</b>enviable lifestyle</span><span><b>C</b>natural ingredients</span><span><b>D</b>masculine image</span><span><b>E</b>product reliability</span><span><b>F</b>romantic interest</span><span><b>G</b>use by celebrities</span></div>
+  </aside>
+    <h2 class="subheading">Shampoo advertisements</h2>
+    <div class="matching-list">
+      <article class="matching-row gradable" data-type="select" data-q="27" data-answer="B" data-weight="1">
+            <div><span class="question-number">27</span><strong>Zing</strong></div>
+            <span class="blank select-blank"><span class="blank-number">27</span><select name="q27" aria-label="Question 27"><option value="">—</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select></span>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q27</span><strong class="result-label"></strong><span>答案：B</span></div>
+
+    <p><b>解析</b>广告展示幸福家庭、漂亮住宅和健康孩子，让观众产生“希望自己的生活也这样”的感觉，核心是令人羡慕的生活方式。</p>
+  </div>
+          </article><article class="matching-row gradable" data-type="select" data-q="28" data-answer="F" data-weight="1">
+            <div><span class="question-number">28</span><strong>Splash</strong></div>
+            <span class="blank select-blank"><span class="blank-number">28</span><select name="q28" aria-label="Question 28"><option value="">—</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select></span>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q28</span><strong class="result-label"></strong><span>答案：F</span></div>
+
+    <p><b>解析</b>广告围绕一对情侣是否分手展开故事，结尾两人继续在一起，核心吸引点是 romantic interest。</p>
+  </div>
+          </article><article class="matching-row gradable" data-type="select" data-q="29" data-answer="E" data-weight="1">
+            <div><span class="question-number">29</span><strong>Just go</strong></div>
+            <span class="blank select-blank"><span class="blank-number">29</span><select name="q29" aria-label="Question 29"><option value="">—</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select></span>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q29</span><strong class="result-label"></strong><span>答案：E</span></div>
+
+    <p><b>解析</b>广告提供大量产品成分和技术信息，使消费者相信它能完成预期功效，强调 product reliability。</p>
+  </div>
+          </article><article class="matching-row gradable" data-type="select" data-q="30" data-answer="A" data-weight="1">
+            <div><span class="question-number">30</span><strong>Brozene</strong></div>
+            <span class="blank select-blank"><span class="blank-number">30</span><select name="q30" aria-label="Question 30"><option value="">—</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option></select></span>
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q30</span><strong class="result-label"></strong><span>答案：A</span></div>
+
+    <p><b>解析</b>广告几乎没有解说，只使用柔和音乐和平静画面，整体效果是 calming，因此对应 relaxation。</p>
+  </div>
+          </article>
+    </div>
+  </section>
+
+  </main>
+  <footer class="page-footer">
+    <div class="score-summary" id="score-summary"></div>
+    <div class="actions"><button id="reset" type="button">重新作答</button><button class="primary" id="finish-btn" type="button">提交并查看答案</button></div>
+  </footer>
+  <script>
+    const exerciseId="p2-01";
+    const normalise=value=>String(value??'').trim().toLowerCase().replace(/[,£\s]/g,'');
+    const rows=[...document.querySelectorAll('.gradable')];
+    const getPanel=row=>row.querySelector('.answer-panel');
+
+    document.querySelectorAll('input[type="checkbox"][data-max]').forEach(input=>{
+      input.addEventListener('change',()=>{
+        const group=[...document.querySelectorAll('[name="'+input.name+'"]')];
+        const max=Number(input.dataset.max);
+        const checked=group.filter(item=>item.checked);
+        group.forEach(item=>item.disabled=checked.length>=max&&!item.checked);
+      });
+    });
+
+    document.getElementById('finish-btn').addEventListener('click',()=>{
+      let score=0,total=0;
+      document.body.classList.add('review');
+      rows.forEach(row=>{
+        const type=row.dataset.type;
+        const weight=Number(row.dataset.weight||1);
+        let earned=0;
+        if(type==='text'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]')?.value||'';
+          const answers=JSON.parse(row.dataset.answers);
+          earned=answers.some(answer=>normalise(answer)===normalise(value))?1:0;
+        }else if(type==='radio'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]:checked')?.value||'';
+          earned=value===row.dataset.answer?1:0;
+        }else if(type==='select'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]')?.value||'';
+          earned=value===row.dataset.answer?1:0;
+        }else if(type==='multi'){
+          const name='q'+row.dataset.q.replace('–','_');
+          const values=[...document.querySelectorAll('[name="'+name+'"]:checked')].map(input=>input.value);
+          const answers=JSON.parse(row.dataset.answers);
+          earned=values.filter(value=>answers.includes(value)).length;
+        }
+        total+=weight;score+=earned;
+        const correct=earned===weight;
+        row.classList.toggle('correct',correct);
+        row.classList.toggle('incorrect',!correct);
+        const panel=getPanel(row);
+        if(panel){
+          panel.classList.toggle('wrong',!correct);
+          const label=panel.querySelector('.result-label');
+          label.textContent=correct?'✓ 正确':(weight>1?'✗ 本组答对 '+earned+'/'+weight:'✗ 错误');
+        }
+      });
+      document.querySelectorAll('input,select').forEach(control=>control.disabled=true);
+      document.getElementById('score-summary').textContent='本次得分：'+score+' / '+total;
+      window.parent.postMessage({type:'tingjian:score',exerciseId,score,total,practicedAt:new Date().toISOString()},'*');
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+
+    document.getElementById('reset').addEventListener('click',()=>{
+      document.body.classList.remove('review');
+      rows.forEach(row=>row.classList.remove('correct','incorrect'));
+      document.querySelectorAll('input,select').forEach(control=>{
+        control.disabled=false;
+        if(control.matches('input[type="radio"],input[type="checkbox"]'))control.checked=false;
+        else control.value='';
+      });
+      document.querySelectorAll('.answer-panel').forEach(panel=>panel.classList.remove('wrong'));
+      document.getElementById('score-summary').textContent='';
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
