@@ -1,71 +1,218 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Asia-Pacific Tours Activity Holidays</title><style>
-:root{--ink:#183c38;--green:#0e5a4f;--mint:#e4efeb;--paper:#fffdf8;--line:#d8ded9;--red:#b94a2d}
-*{box-sizing:border-box}body{margin:0;background:#f5f3ed;color:var(--ink);font:15px/1.65 Arial,sans-serif}
-header{position:sticky;top:0;z-index:2;padding:18px 28px;background:var(--paper);border-bottom:1px solid var(--line)}
-header strong{display:block;font:24px Georgia,serif}header small{color:#70827c}
-main{max-width:920px;margin:auto;padding:24px 28px 100px}audio{width:100%;margin:0 0 22px}
-.intro{padding:17px 20px;border-left:3px solid #eb6b43;background:var(--mint)}
-section{margin-top:24px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:8px}
-h2{margin:0 0 16px;font:22px Georgia,serif}.q{padding:18px 0;border-top:1px solid #e5e8e5}.q:first-of-type{border-top:0}
-.q-title{display:flex;gap:10px}.num{min-width:42px;color:#eb6b43;font-weight:bold}
-input[type=text]{width:220px;max-width:100%;margin:12px 0 0 52px;padding:9px 10px;border:1px solid #8ca29b;border-radius:4px}
-label{display:block;margin:8px 0 0 52px}.answer{display:none;margin:13px 0 0 52px;padding:11px 13px;background:#edf6f2;border-left:3px solid var(--green)}
-.answer.bad{background:#fff0eb;border-color:var(--red)}body.review .answer{display:block}.correct{color:var(--green)}.incorrect{color:var(--red)}
-footer{position:fixed;right:0;bottom:0;left:0;display:flex;justify-content:flex-end;gap:10px;padding:13px 28px;background:var(--paper);border-top:1px solid var(--line)}
-button{padding:10px 18px;border:1px solid var(--green);border-radius:4px;background:white;color:var(--green);font-weight:bold;cursor:pointer}button.primary{background:var(--green);color:white}
-@media(max-width:600px){header,main,footer{padding-left:14px;padding-right:14px}input[type=text],label,.answer{margin-left:0}}
-</style></head><body>
-<header><strong>Asia-Pacific Tours Activity Holidays</strong><small>Complete the table. Write ONE WORD AND/OR A NUMBER for each answer.</small></header>
-<main><audio controls preload="metadata" src="audio.m4a"></audio><div class="intro">Complete the table. Write ONE WORD AND/OR A NUMBER for each answer.</div>
-<section><h2>Vietnam</h2><div class="q" data-index="0">
-<div class="q-title"><span class="num">1</span><span>Either ___ lessons or a one-day trek</span></div>
-<input type="text" name="q1" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：diving<br>The speaker offers instruction in diving.</div></div><div class="q" data-index="1">
-<div class="q-title"><span class="num">2</span><span>A one-day trek in the ___</span></div>
-<input type="text" name="q2" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：jungle<br>The trek goes through the jungle near the beach.</div></div><div class="q" data-index="2">
-<div class="q-title"><span class="num">3</span><span>Attend a ___ performance</span></div>
-<input type="text" name="q3" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：dance<br>Opera is rejected as the former option; the current activity is a dance show.</div></div><div class="q" data-index="3">
-<div class="q-title"><span class="num">4</span><span>Cost: £ ___</span></div>
-<input type="text" name="q4" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：1450 / 1,450<br>The old price was £1,600, but it was reduced to £1,450.</div></div></section><section><h2>Hong Kong</h2><div class="q" data-index="0">
-<div class="q-title"><span class="num">5</span><span>Look at ___ in a country park</span></div>
-<input type="text" name="q5" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：birds<br>Visitors can see birds of all sorts in the hills.</div></div><div class="q" data-index="1">
-<div class="q-title"><span class="num">6</span><span>Followed by ___ in a monastery</span></div>
-<input type="text" name="q6" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：dinner<br>The guided visit includes dinner in a monastery.</div></div><div class="q" data-index="2">
-<div class="q-title"><span class="num">7</span><span>Visit an ___ factory</span></div>
-<input type="text" name="q7" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：electronics<br>The shopping visit is to an electronics factory.</div></div></section><section><h2>Japan</h2><div class="q" data-index="0">
-<div class="q-title"><span class="num">8</span><span>Destination: ___</span></div>
-<input type="text" name="q8" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：Japan<br>Korea and Thailand are distractors; the selected package is Japan.</div></div><div class="q" data-index="1">
-<div class="q-title"><span class="num">9</span><span>A museum of traditional ___</span></div>
-<input type="text" name="q9" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：costume<br>The tour includes a museum of traditional costume.</div></div><div class="q" data-index="2">
-<div class="q-title"><span class="num">10</span><span>A big ___ market</span></div>
-<input type="text" name="q10" autocomplete="off">
-<div class="answer"><strong></strong><br>答案：fish<br>The crafts market is corrected to a large fish market.</div></div></section>
-</main><footer><button id="reset">重新作答</button><button class="primary" id="finish-btn">提交并查看答案</button></footer>
-<script>
-const data=[{"n":1,"prompt":"Either ___ lessons or a one-day trek","answer":["diving"],"explanation":"The speaker offers instruction in diving."},{"n":2,"prompt":"A one-day trek in the ___","answer":["jungle"],"explanation":"The trek goes through the jungle near the beach."},{"n":3,"prompt":"Attend a ___ performance","answer":["dance"],"explanation":"Opera is rejected as the former option; the current activity is a dance show."},{"n":4,"prompt":"Cost: £ ___","answer":["1450","1,450"],"explanation":"The old price was £1,600, but it was reduced to £1,450."},{"n":5,"prompt":"Look at ___ in a country park","answer":["birds"],"explanation":"Visitors can see birds of all sorts in the hills."},{"n":6,"prompt":"Followed by ___ in a monastery","answer":["dinner"],"explanation":"The guided visit includes dinner in a monastery."},{"n":7,"prompt":"Visit an ___ factory","answer":["electronics"],"explanation":"The shopping visit is to an electronics factory."},{"n":8,"prompt":"Destination: ___","answer":["Japan"],"explanation":"Korea and Thailand are distractors; the selected package is Japan."},{"n":9,"prompt":"A museum of traditional ___","answer":["costume"],"explanation":"The tour includes a museum of traditional costume."},{"n":10,"prompt":"A big ___ market","answer":["fish"],"explanation":"The crafts market is corrected to a large fish market."}];
-const norm=value=>String(value??'').trim().toLowerCase().replace(/[,£]/g,'');
-document.getElementById('finish-btn').onclick=()=>{
- let score=0,total=0;
- document.body.classList.add('review');
- document.querySelectorAll('.q').forEach((row,index)=>{
-  const q=data[index],name='q'+String(q.n).replace('-','_');
-  const values=q.options?[...document.querySelectorAll('[name="'+name+'"]:checked')].map(el=>el.value):[document.querySelector('[name="'+name+'"]')?.value||''];
-  const ok=q.answer.length===values.length&&q.answer.every(answer=>values.some(value=>norm(value)===norm(answer)));
-  total+=q.multiple?q.answer.length:1;score+=ok?(q.multiple?q.answer.length:1):0;
-  const box=row.querySelector('.answer'),label=box.querySelector('strong');box.classList.toggle('bad',!ok);label.className=ok?'correct':'incorrect';label.textContent=ok?'✓ 正确':'✗ 需要复习';
-  row.querySelectorAll('input').forEach(input=>input.disabled=true);
- });
- window.parent.postMessage({type:'tingjian:score',exerciseId:"p1-01",score,total,practicedAt:new Date().toISOString()},'*');
-};
-document.getElementById('reset').onclick=()=>{document.body.classList.remove('review');document.querySelectorAll('input').forEach(input=>{input.disabled=false;input.checked=false;if(input.type==='text')input.value=''});};
-</script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Asia-Pacific Tours Activity Holidays</title>
+  <style>
+    :root{--ink:#173c37;--green:#0e5a4f;--green-2:#dfeee9;--paper:#fffdf8;--cream:#f5f2ea;--line:#d4ddd8;--orange:#e96842;--red:#a83d2c;--red-bg:#fff1ec}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.65 Arial,"Noto Sans SC",sans-serif}
+    button,input,select{font:inherit;color:inherit}button{cursor:pointer}
+    .page-header{position:sticky;z-index:10;top:0;padding:16px 24px;background:rgba(255,253,248,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .page-header>div{max-width:980px;margin:auto}.page-header strong{display:block;font:700 24px/1.25 Georgia,serif}.page-header span{display:block;margin-top:4px;color:#667b75;font-size:12px}.page-header b{color:var(--orange)}
+    main{max-width:980px;margin:auto;padding:22px 24px 110px}.audio-wrap{position:sticky;z-index:8;top:88px;margin-bottom:18px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:rgba(245,242,234,.96);box-shadow:0 5px 20px rgba(28,55,48,.08)}audio{display:block;width:100%;height:38px}
+    .paper-block{margin:18px 0;padding:28px 34px;border:1px solid var(--line);border-radius:9px;background:var(--paper);box-shadow:0 9px 28px rgba(31,58,50,.06)}
+    h2{margin:0 0 22px;text-align:center;font:700 22px/1.3 Georgia,serif}.subheading,.flow-title{margin-top:26px;text-align:left;font-size:18px}.section-instruction{display:grid;gap:2px;margin-bottom:20px}.section-instruction b{font-size:16px}.section-instruction span{color:#516b64;font-size:13px}
+    .question-card{padding:20px 0;border-top:1px solid #e5e9e6}.question-card:first-of-type{border-top:0}.question-title{display:flex;align-items:flex-start;gap:11px}.question-title h3{margin:0;font-size:15px;line-height:1.55}.question-number{display:inline-grid;flex:0 0 auto;min-width:34px;height:28px;padding:0 7px;place-items:center;border-radius:14px;background:var(--green);color:#fff;font-size:12px;font-weight:800}
+    .choice-list{display:grid;gap:7px;margin:13px 0 0 45px}.choice-list label{display:grid;grid-template-columns:18px 28px minmax(0,1fr);align-items:start;gap:7px;padding:7px 9px;border:1px solid transparent;border-radius:6px;cursor:pointer}.choice-list label:hover{border-color:#bfd1ca;background:#f4f8f6}.choice-list input{margin:4px 0 0}.choice-letter{font-weight:800}
+    .answer-panel{display:none;margin:14px 0 0 45px;padding:13px 15px;border-left:4px solid var(--green);background:#edf6f2}.review .answer-panel{display:block}.answer-panel.wrong{border-color:var(--red);background:var(--red-bg)}.answer-heading{display:flex;flex-wrap:wrap;gap:8px 15px}.answer-heading span{font-weight:700}.answer-question{min-width:30px;color:var(--orange)}.result-label{color:var(--green)}.answer-panel.wrong .result-label{color:var(--red)}.answer-panel p{margin:8px 0 0}.answer-panel p b{display:inline-block;margin-right:8px;color:#60756f;font-size:12px}.transcript{color:#385a52}
+    .table-wrap{overflow-x:auto}.tour-table{width:100%;border-collapse:collapse}.tour-table th,.tour-table td{padding:16px 15px;border:1px solid #aebeb8;vertical-align:top;text-align:left}.tour-table thead th{background:var(--green);color:#fff;text-align:center}.tour-table tbody th{width:19%;background:#edf4f1}.tour-table tbody td:nth-child(2){min-width:480px}.tour-table tbody td:last-child{width:15%;white-space:nowrap;text-align:center}.tour-table ul{margin:0;padding-left:20px}.tour-table li+li{margin-top:10px}.example-label{display:block;margin-bottom:5px;color:#6b7d77;font-size:11px;font-weight:500}
+    .blank{display:inline-flex;align-items:center;gap:5px;margin:0 3px;vertical-align:middle}.blank-number{color:var(--orange);font-size:11px;font-weight:800}.blank input{width:118px;height:32px;padding:3px 7px;border:0;border-bottom:2px solid #5a726a;background:#f8f8f3;outline:0}.blank input:focus{border-color:var(--orange);background:#fff}.select-blank select{width:54px;height:32px;border:1px solid #799188;border-radius:4px;background:#fff}
+    .solution-list>h2{display:none;margin-top:30px}.review .solution-list>h2{display:block}.inline-result{display:none}.review .inline-result{display:block}.inline-result .answer-panel{margin-left:0}
+    .option-bank{max-width:700px;margin:18px auto;padding:18px 20px;border:2px solid #adc1b9;border-radius:7px;background:#f5f8f6}.option-bank>strong{display:block;margin-bottom:10px;text-align:center}.option-bank>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 24px}.option-bank span{display:flex;gap:9px}.option-bank b{color:var(--orange)}
+    .matching-list{max-width:700px;margin:auto}.matching-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid #e3e8e5}.matching-row>div:first-child{display:flex;align-items:center;gap:12px}.matching-row .answer-panel{grid-column:1/-1;margin:4px 0 0}
+    .multi-question .section-instruction{margin-bottom:13px}.multi-question+.multi-question{margin-top:15px}.multi-question .question-number{min-width:58px}
+    .flow-chart{max-width:760px;margin:auto}.flow-step{position:relative;margin-bottom:28px;padding:19px 22px;border:1px solid #b9c9c3;border-radius:8px;background:#f8faf8}.flow-step p{margin:0}.flow-step .answer-panel{margin-left:0}.flow-arrow{position:absolute;right:50%;bottom:-31px;color:var(--orange);font-size:22px;font-weight:800}
+    .memory-paper>h2{font-size:25px}.note-section{margin:22px 0}.note-section h3{display:inline-block;margin:0 0 8px;padding:3px 10px;border-left:4px solid var(--orange);background:#f1f5f2;font-size:16px}.note-section ul{margin:0;padding-left:30px}.note-section li+li{margin-top:10px}
+    .vocabulary{margin:18px 0;padding:16px 20px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}.vocabulary summary{font-weight:800;cursor:pointer}.vocabulary dl{margin:15px 0 0}.vocabulary dl>div{display:grid;grid-template-columns:minmax(180px,1fr) 1fr;gap:18px;padding:7px 0;border-top:1px solid #e7e9e6}.vocabulary dt{font-weight:700}.vocabulary dd{margin:0;color:#5d716b}
+    .page-footer{position:fixed;z-index:11;right:0;bottom:0;left:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 24px;border-top:1px solid var(--line);background:rgba(255,253,248,.98)}.score-summary{font-weight:800}.score-summary:empty{display:none}.actions{display:flex;gap:9px;margin-left:auto}.actions button{padding:9px 16px;border:1px solid var(--green);border-radius:5px;background:#fff;color:var(--green);font-weight:800}.actions .primary{background:var(--green);color:#fff}
+    .review input,.review select{pointer-events:none}.review .gradable.correct{--status:var(--green)}.review .gradable.incorrect{--status:var(--red)}
+    @media(max-width:700px){.page-header{padding:12px 14px}.page-header strong{font-size:18px}.page-header span{font-size:10px}main{padding:12px 8px 100px}.audio-wrap{top:69px;margin-bottom:10px;padding:8px}.paper-block{padding:20px 14px}.choice-list{margin-left:0}.answer-panel{margin-left:0}.option-bank>div{grid-template-columns:1fr}.tour-table th,.tour-table td{padding:11px 10px}.blank input{width:92px}.page-footer{padding:9px 10px}.score-summary{font-size:12px}.actions button{padding:8px 11px}.vocabulary dl>div{grid-template-columns:1fr;gap:2px}}
+  </style>
+</head>
+<body>
+  <header class="page-header"><div><strong>Asia-Pacific Tours Activity Holidays</strong><span>Questions 1–10 · Complete the table below. · <b>Write ONE WORD AND/OR A NUMBER for each answer.</b></span></div></header>
+  <main>
+    <div class="audio-wrap"><audio controls preload="metadata" src="audio.m4a"></audio></div>
+
+  <section class="paper-block">
+    <h2>Asia-Pacific Tours Activity Holidays</h2>
+    <div class="table-wrap">
+      <table class="tour-table">
+        <thead><tr><th>Tour</th><th>Details</th><th>Cost</th></tr></thead>
+        <tbody>
+          <tr>
+                <th><span class="example-label">Example</span>Vietnam</th>
+                <td><ul><li>a cookery course at a 5-star hotel</li><li>either <span class="blank"><span class="blank-number">1</span><input type="text" name="q1" aria-label="Question 1"></span> lessons or a one-day trek in the <span class="blank"><span class="blank-number">2</span><input type="text" name="q2" aria-label="Question 2"></span></li><li>attend a <span class="blank"><span class="blank-number">3</span><input type="text" name="q3" aria-label="Question 3"></span> performance</li></ul></td>
+                <td><span class="blank"><span class="blank-number">4</span><span>£</span><input type="text" name="q4" aria-label="Question 4"></span></td>
+              </tr><tr>
+                <th>Hong Kong</th>
+                <td><ul><li>go to the hills to look at <span class="blank"><span class="blank-number">5</span><input type="text" name="q5" aria-label="Question 5"></span> in a country park</li><li>followed by <span class="blank"><span class="blank-number">6</span><input type="text" name="q6" aria-label="Question 6"></span> in a monastery</li><li>visit an <span class="blank"><span class="blank-number">7</span><input type="text" name="q7" aria-label="Question 7"></span> factory with the chance to shop</li></ul></td>
+                <td>£1,320</td>
+              </tr><tr>
+                <th><span class="blank"><span class="blank-number">8</span><input type="text" name="q8" aria-label="Question 8"></span></th>
+                <td><ul><li>visit a museum of traditional <span class="blank"><span class="blank-number">9</span><input type="text" name="q9" aria-label="Question 9"></span></li><li>tour of a big <span class="blank"><span class="blank-number">10</span><input type="text" name="q10" aria-label="Question 10"></span> market</li></ul></td>
+                <td>£1,800</td>
+              </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="solution-list"><h2>答案与解析</h2>
+  <div class="inline-result gradable" data-type="text" data-q="1" data-answers="[&quot;diving&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q1</span><strong class="result-label"></strong><span>答案：diving</span></div>
+    <p class="transcript"><b>录音定位</b>On another day, you have a choice of two activities: the first is instruction in diving in the South China Sea, not a certificate course but just an introduction.</p>
+    <p><b>解析</b>先判断空格要填能与 lessons 搭配的名词。录音进入 two activities 后，第一项是 instruction in diving，因此填 diving。这里 instruction / course 对应 lessons。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="2" data-answers="[&quot;jungle&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q2</span><strong class="result-label"></strong><span>答案：jungle</span></div>
+    <p class="transcript"><b>录音定位</b>You can spend the day on a trek through the jungle near the beach.</p>
+    <p><b>解析</b>介词 in 后需要地点。听到 trek 后继续捕捉地点，through the jungle 对应题目中的 trek in the jungle；spend the day on a trek 对应 one-day trek。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="3" data-answers="[&quot;dance&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q3</span><strong class="result-label"></strong><span>答案：dance</span></div>
+    <p class="transcript"><b>录音定位</b>We used to take people to a Vietnamese Opera but that didn’t prove so popular, so now we include a dance show.</p>
+    <p><b>解析</b>used to 引出的 opera 是过去的安排，but 和 so now 表明现在改为 dance show。show 与 performance 同义，因此填 dance。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="4" data-answers="[&quot;1450&quot;,&quot;1,450&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q4</span><strong class="result-label"></strong><span>答案：1450 / 1,450</span></div>
+    <p class="transcript"><b>录音定位</b>The holiday used to be 1,600 pounds, but it’s just been reduced to 1,450 pounds.</p>
+    <p><b>解析</b>题目需要价格。1,600 是 used to 后的旧价，but 后的 reduced to 1,450 才是现价。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="5" data-answers="[&quot;birds&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q5</span><strong class="result-label"></strong><span>答案：birds</span></div>
+    <p class="transcript"><b>录音定位</b>It includes a walk in the hills of one of their country parks where you have the chance to see birds of all sorts.</p>
+    <p><b>解析</b>hills 和 country park 是定位词。see birds 对应 look at birds，go to the hills 对应 a walk in the hills。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="6" data-answers="[&quot;dinner&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q6</span><strong class="result-label"></strong><span>答案：dinner</span></div>
+    <p class="transcript"><b>录音定位</b>You go with a trained escort, and it includes dinner in a monastery.</p>
+    <p><b>解析</b>空格需要名词。答案 dinner 出现在定位信息 in a monastery 之前，属于答案前置；不能等听到 monastery 后才开始找答案。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="7" data-answers="[&quot;electronics&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q7</span><strong class="result-label"></strong><span>答案：electronics</span></div>
+    <p class="transcript"><b>录音定位</b>There’s another day when we take you around an electronics factory.</p>
+    <p><b>解析</b>an ___ factory 需要元音音素开头的名词或形容词。take you around 对应 visit，electronics factory 是最终地点；后面的 ceramics factory 是干扰信息。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="8" data-answers="[&quot;Japan&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q8</span><strong class="result-label"></strong><span>答案：Japan</span></div>
+    <p class="transcript"><b>录音定位</b>I’ve always wanted to go to Korea but not on this trip, and I’ve been to Thailand ... but what about your Japan package?</p>
+    <p><b>解析</b>题目需要国家名。Korea 后有 not on this trip，Thailand 是已经去过的地方；最后实际询问的是 Japan package。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="9" data-answers="[&quot;costume&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q9</span><strong class="result-label"></strong><span>答案：costume</span></div>
+    <p class="transcript"><b>录音定位</b>That tour includes a terrific trip to a museum of traditional costume.</p>
+    <p><b>解析</b>traditional 后需要名词。录音直接出现 museum of traditional costume；trip to a museum 对应 visit a museum。</p>
+  </div>
+  </div>
+  <div class="inline-result gradable" data-type="text" data-q="10" data-answers="[&quot;fish&quot;]" data-weight="1">
+
+  <div class="answer-panel">
+    <div class="answer-heading"><span class="answer-question">Q10</span><strong class="result-label"></strong><span>答案：fish</span></div>
+    <p class="transcript"><b>录音定位</b>A crafts market, I think. Well, we do go to a market, but it’s one that sells fish and it’s one of the largest in the world.</p>
+    <p><b>解析</b>crafts market 是猜测，随后 but 纠正为 sells fish。largest 对应题目中的 big，因此填 fish。</p>
+  </div>
+  </div></div>
+  </section>
+  <details class="vocabulary"><summary>原资料词汇补充</summary><dl><div><dt>fastest-growing destination</dt><dd>发展最快的目的地</dd></div><div><dt>on offer</dt><dd>正在提供</dd></div><div><dt>rave about</dt><dd>大加赞赏</dd></div><div><dt>of all sorts</dt><dd>各种各样的</dd></div><div><dt>miss out</dt><dd>错过</dd></div><div><dt>exhibits / collection</dt><dd>展品 / 收藏</dd></div><div><dt>priceless</dt><dd>无价的</dd></div><div><dt>wander around</dt><dd>四处闲逛</dd></div><div><dt>note all details down</dt><dd>把所有细节记录下来</dd></div><div><dt>make up one’s mind</dt><dd>下定决心</dd></div></dl></details>
+
+  </main>
+  <footer class="page-footer">
+    <div class="score-summary" id="score-summary"></div>
+    <div class="actions"><button id="reset" type="button">重新作答</button><button class="primary" id="finish-btn" type="button">提交并查看答案</button></div>
+  </footer>
+  <script>
+    const exerciseId="p1-01";
+    const normalise=value=>String(value??'').trim().toLowerCase().replace(/[,£\s]/g,'');
+    const rows=[...document.querySelectorAll('.gradable')];
+    const getPanel=row=>row.querySelector('.answer-panel');
+
+    document.querySelectorAll('input[type="checkbox"][data-max]').forEach(input=>{
+      input.addEventListener('change',()=>{
+        const group=[...document.querySelectorAll('[name="'+input.name+'"]')];
+        const max=Number(input.dataset.max);
+        const checked=group.filter(item=>item.checked);
+        group.forEach(item=>item.disabled=checked.length>=max&&!item.checked);
+      });
+    });
+
+    document.getElementById('finish-btn').addEventListener('click',()=>{
+      let score=0,total=0;
+      document.body.classList.add('review');
+      rows.forEach(row=>{
+        const type=row.dataset.type;
+        const weight=Number(row.dataset.weight||1);
+        let earned=0;
+        if(type==='text'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]')?.value||'';
+          const answers=JSON.parse(row.dataset.answers);
+          earned=answers.some(answer=>normalise(answer)===normalise(value))?1:0;
+        }else if(type==='radio'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]:checked')?.value||'';
+          earned=value===row.dataset.answer?1:0;
+        }else if(type==='select'){
+          const value=document.querySelector('[name="q'+row.dataset.q+'"]')?.value||'';
+          earned=value===row.dataset.answer?1:0;
+        }else if(type==='multi'){
+          const name='q'+row.dataset.q.replace('–','_');
+          const values=[...document.querySelectorAll('[name="'+name+'"]:checked')].map(input=>input.value);
+          const answers=JSON.parse(row.dataset.answers);
+          earned=values.filter(value=>answers.includes(value)).length;
+        }
+        total+=weight;score+=earned;
+        const correct=earned===weight;
+        row.classList.toggle('correct',correct);
+        row.classList.toggle('incorrect',!correct);
+        const panel=getPanel(row);
+        if(panel){
+          panel.classList.toggle('wrong',!correct);
+          const label=panel.querySelector('.result-label');
+          label.textContent=correct?'✓ 正确':(weight>1?'✗ 本组答对 '+earned+'/'+weight:'✗ 错误');
+        }
+      });
+      document.querySelectorAll('input,select').forEach(control=>control.disabled=true);
+      document.getElementById('score-summary').textContent='本次得分：'+score+' / '+total;
+      window.parent.postMessage({type:'tingjian:score',exerciseId,score,total,practicedAt:new Date().toISOString()},'*');
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+
+    document.getElementById('reset').addEventListener('click',()=>{
+      document.body.classList.remove('review');
+      rows.forEach(row=>row.classList.remove('correct','incorrect'));
+      document.querySelectorAll('input,select').forEach(control=>{
+        control.disabled=false;
+        if(control.matches('input[type="radio"],input[type="checkbox"]'))control.checked=false;
+        else control.value='';
+      });
+      document.querySelectorAll('.answer-panel').forEach(panel=>panel.classList.remove('wrong'));
+      document.getElementById('score-summary').textContent='';
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>

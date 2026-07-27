@@ -69,3 +69,51 @@ test("every exercise has audio, grading controls, and score reporting", async ()
     assert.match(html, /tingjian:score/, `${exercise.id} does not report its score`);
   }
 });
+
+test("PDF-only exercises preserve their source-specific layouts and wording", async () => {
+  const readExercise = (id) =>
+    readFile(new URL(`../public/exercises/${id}/index.html`, import.meta.url), "utf8");
+  const [tour, shampoo, handwriting, art, memory] = await Promise.all([
+    readExercise("p1-01"),
+    readExercise("p2-01"),
+    readExercise("p3-01"),
+    readExercise("p3-02"),
+    readExercise("p4-01"),
+  ]);
+
+  assert.match(tour, /<table class="tour-table">/);
+  assert.match(tour, /a cookery course at a 5-star hotel/);
+  assert.match(tour, /£1,320/);
+  assert.match(tour, /£1,800/);
+  assert.equal((tour.match(/class="inline-result gradable"/g) ?? []).length, 10);
+
+  assert.equal((shampoo.match(/class="option-bank"/g) ?? []).length, 1);
+  assert.equal((shampoo.match(/class="matching-row gradable"/g) ?? []).length, 4);
+  assert.match(shampoo, /The presence of the chemicals is rarely publicised/);
+  assert.match(shampoo, /product reliability/);
+
+  assert.equal((handwriting.match(/data-type="multi"/g) ?? []).length, 2);
+  assert.match(handwriting, /not spacing letters correctly/);
+  assert.match(handwriting, /writing very slowly/);
+  assert.match(handwriting, /regretful that they have lost the habit/);
+  assert.doesNotMatch(handwriting, /not holding the pencil correctly/);
+
+  assert.equal((art.match(/class="option-bank"/g) ?? []).length, 1);
+  assert.equal((art.match(/class="flow-step gradable"/g) ?? []).length, 6);
+  assert.match(art, /Seracini’s search for Leonardo Da Vinci’s Battle of Anghiari/);
+  assert.match(art, /a thermographic camera/);
+
+  for (const heading of [
+    "Early Cultures",
+    "Ancient Greeks",
+    "Ancient Romans",
+    "Later European History",
+    "Modern Times",
+  ]) {
+    assert.match(memory, new RegExp(heading));
+  }
+  assert.match(memory, /Memory helped with navigation and family history/);
+  assert.match(memory, /important research was conducted on “S”/);
+  assert.match(memory, /Later, people started to rely on computers/);
+  assert.equal((memory.match(/class="inline-result gradable"/g) ?? []).length, 10);
+});
