@@ -61,6 +61,10 @@ test("GitHub Pages entrypoint uses repository-safe relative paths", async () => 
   assert.match(script, /event\.stopPropagation\(\)/);
   assert.match(script, /\.result-label/);
   assert.match(script, /\.results-in-page/);
+  assert.match(index, /aria-keyshortcuts="H"/);
+  assert.match(script, /handleHighlightShortcut/);
+  assert.match(script, /isEditableShortcutTarget/);
+  assert.match(script, /restoreHighlightChange\(event\.shiftKey \? "redo" : "undo"\)/);
   const scoreKey = script.match(/const SCORE_KEY = "([^"]+)"/)?.[1];
   const highlightKey = script.match(/const HIGHLIGHT_KEY = "([^"]+)"/)?.[1];
   assert.ok(scoreKey && highlightKey);

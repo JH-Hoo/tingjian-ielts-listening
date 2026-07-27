@@ -10,6 +10,8 @@ let query = "";
 let scores = {};
 let highlights = {};
 let highlightMode = false;
+let highlightUndo = {};
+let highlightRedo = {};
 
 const $ = (selector) => document.querySelector(selector);
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
@@ -94,6 +96,19 @@ function saveHighlights() {
 
 function recordsFor(exerciseId) {
   return Array.isArray(highlights[exerciseId]) ? highlights[exerciseId] : [];
+}
+
+function copyHighlightRecords(records) {
+  return records.map((record) => ({ ...record }));
+}
+
+function rememberHighlightChange(exerciseId, before, after) {
+  const stack = highlightUndo[exerciseId] || [];
+  highlightUndo[exerciseId] = [
+    ...stack.slice(-49),
+    { before: copyHighlightRecords(before), after: copyHighlightRecords(after) },
+  ];
+  highlightRedo[exerciseId] = [];
 }
 
 function updateHighlightControls() {
@@ -216,6 +231,70 @@ function removeHighlightMarks(doc, highlightId) {
   }
 }
 
+function syncFrameHighlights(exerciseId) {
+  const frame = $("#practice-frame");
+  if (frame.dataset.exerciseId !== exerciseId) return;
+  const doc = frame.contentDocument;
+  if (!doc) return;
+  for (const mark of [...doc.querySelectorAll("mark.tingjian-highlight")]) {
+    const parent = mark.parentNode;
+    mark.replaceWith(...mark.childNodes);
+    parent?.normalize();
+  }
+  for (const record of recordsFor(exerciseId)) applyHighlightRecord(doc, record);
+}
+
+function restoreHighlightChange(direction) {
+  const source = direction === "undo" ? highlightUndo : highlightRedo;
+  const target = direction === "undo" ? highlightRedo : highlightUndo;
+  const stack = source[selectedId] || [];
+  const change = stack.pop();
+  if (!change) return false;
+  source[selectedId] = stack;
+  target[selectedId] = [...(target[selectedId] || []), change];
+  highlights = {
+    ...highlights,
+    [selectedId]: copyHighlightRecords(direction === "undo" ? change.before : change.after),
+  };
+  saveHighlights();
+  syncFrameHighlights(selectedId);
+  updateHighlightControls();
+  return true;
+}
+
+function setHighlightMode(enabled) {
+  highlightMode = enabled;
+  try { localStorage.setItem(HIGHLIGHT_MODE_KEY, highlightMode ? "on" : "off"); } catch { /* Storage may be unavailable. */ }
+  updateFrameHighlightMode();
+  updateHighlightControls();
+}
+
+function isEditableShortcutTarget(target) {
+  return Boolean(target?.closest?.("input,textarea,select,[contenteditable='true'],[contenteditable=''],[role='textbox']"));
+}
+
+function handleHighlightShortcut(event) {
+  if (event.defaultPrevented || event.repeat || isEditableShortcutTarget(event.target)) return;
+  const key = event.key.toLowerCase();
+  if (key === "h" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+    event.preventDefault();
+    setHighlightMode(!highlightMode);
+    return;
+  }
+  if (event.key === "Escape" && highlightMode) {
+    event.preventDefault();
+    setHighlightMode(false);
+    return;
+  }
+  if (key === "z" && (event.metaKey || event.ctrlKey) && !event.altKey) {
+    const changed = restoreHighlightChange(event.shiftKey ? "redo" : "undo");
+    if (changed) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+}
+
 function addSelectionHighlight(doc, exerciseId) {
   if (!highlightMode) return;
   const selection = doc.getSelection();
@@ -236,7 +315,9 @@ function addSelectionHighlight(doc, exerciseId) {
     prefix: selected.fullText.slice(Math.max(0, selected.start - 24), selected.start),
     suffix: selected.fullText.slice(selected.end, selected.end + 24),
   };
-  highlights = { ...highlights, [exerciseId]: [...existing, record] };
+  const updated = [...existing, record];
+  rememberHighlightChange(exerciseId, existing, updated);
+  highlights = { ...highlights, [exerciseId]: updated };
   saveHighlights();
   applyHighlightRecord(doc, record);
   selection.removeAllRanges();
@@ -265,14 +346,18 @@ function installFrameHighlighter(frame) {
   };
   doc.addEventListener("pointerup", scheduleHighlight);
   doc.addEventListener("touchend", scheduleHighlight);
+  doc.addEventListener("keydown", handleHighlightShortcut);
   doc.addEventListener("click", (event) => {
     const mark = event.target.closest?.("mark.tingjian-highlight");
     if (!mark) return;
     event.preventDefault();
     event.stopPropagation();
     const id = mark.dataset.highlightId;
+    const existing = recordsFor(exerciseId);
+    const updated = existing.filter((record) => record.id !== id);
+    rememberHighlightChange(exerciseId, existing, updated);
     removeHighlightMarks(doc, id);
-    highlights = { ...highlights, [exerciseId]: recordsFor(exerciseId).filter((record) => record.id !== id) };
+    highlights = { ...highlights, [exerciseId]: updated };
     saveHighlights();
     updateHighlightControls();
   }, true);
@@ -306,12 +391,8 @@ $("#mobile-menu").addEventListener("click", () => {
 $("#sidebar-close").addEventListener("click", closeSidebar);
 $("#sidebar-backdrop").addEventListener("click", closeSidebar);
 $("#practice-frame").addEventListener("load", (event) => installFrameHighlighter(event.currentTarget));
-$("#highlight-toggle").addEventListener("click", () => {
-  highlightMode = !highlightMode;
-  try { localStorage.setItem(HIGHLIGHT_MODE_KEY, highlightMode ? "on" : "off"); } catch { /* Storage may be unavailable. */ }
-  updateFrameHighlightMode();
-  updateHighlightControls();
-});
+document.addEventListener("keydown", handleHighlightShortcut);
+$("#highlight-toggle").addEventListener("click", () => setHighlightMode(!highlightMode));
 $("#highlight-clear").addEventListener("click", () => {
   const records = recordsFor(selectedId);
   if (!records.length || !window.confirm("清除这篇练习的全部高亮标记？")) return;
@@ -319,6 +400,7 @@ $("#highlight-clear").addEventListener("click", () => {
   if (doc) {
     for (const record of records) removeHighlightMarks(doc, record.id);
   }
+  rememberHighlightChange(selectedId, records, []);
   highlights = { ...highlights, [selectedId]: [] };
   saveHighlights();
   updateHighlightControls();
