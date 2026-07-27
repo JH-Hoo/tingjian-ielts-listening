@@ -74,6 +74,19 @@ test("GitHub Pages entrypoint uses repository-safe relative paths", async () => 
   assert.ok(publishedExercises.every((exercise) => exercise.href.startsWith("./exercises/")));
 });
 
+test("every exercise offers 1.2x audio playback", async () => {
+  const pages = await Promise.all(exercises.map((exercise) =>
+    readFile(new URL(`../public/exercises/${exercise.id}/index.html`, import.meta.url), "utf8")
+  ));
+  pages.forEach((html, index) => {
+    assert.match(
+      html,
+      /<option[^>]+value=["']1\.2["']/i,
+      `${exercises[index].id} has no 1.2x speed option`,
+    );
+  });
+});
+
 test("every exercise has audio, grading controls, and score reporting", async () => {
   for (const exercise of exercises) {
     const root = new URL(`../public/exercises/${exercise.id}/`, import.meta.url);
