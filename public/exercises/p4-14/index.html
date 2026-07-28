@@ -838,30 +838,5 @@ document.addEventListener('DOMContentLoaded', () => App.init());
 }());
 </script>
 
-<script>
-(() => {
-  const reportScore = () => window.setTimeout(() => {
-    const graded = [...document.querySelectorAll('.q-nav-item.correct,.q-nav-item.incorrect')];
-    const weight = item => {
-      const value = item.dataset.qnum || item.textContent.trim();
-      const match = value.match(/(\d+)\s*-\s*(\d+)/);
-      return match ? Number(match[2]) - Number(match[1]) + 1 : 1;
-    };
-    const score = graded.filter(item => item.classList.contains('correct')).reduce((sum,item) => sum + weight(item), 0);
-    const total = graded.reduce((sum,item) => sum + weight(item), 0);
-    if (total > 0) {
-      window.parent.postMessage({
-        type: 'tingjian:score',
-        exerciseId: "p4-14",
-        score,
-        total,
-        practicedAt: new Date().toISOString()
-      }, '*');
-    }
-  }, 300);
-  window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('finish-btn')?.addEventListener('click', reportScore);
-  });
-})();
-</script></body>
+<script src="../../score-bridge.js" data-exercise-id="p4-14"></script></body>
 </html>

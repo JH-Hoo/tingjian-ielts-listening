@@ -24,37 +24,8 @@ const cleanTitle = (name) =>
     .replace(/^\d+\.\s*P[1-4]\s*/i, "")
     .trim();
 
-const bridgeScript = (exerciseId) => `
-<script>
-(() => {
-  const reportScore = () => window.setTimeout(() => {
-    const graded = [...document.querySelectorAll('.q-nav-item.correct,.q-nav-item.incorrect')];
-    const weight = item => {
-      const value = item.dataset.qnum || item.textContent.trim();
-      const match = value.match(/(\\d+)\\s*-\\s*(\\d+)/);
-      return match ? Number(match[2]) - Number(match[1]) + 1 : 1;
-    };
-    const score = graded.filter(item => item.classList.contains('correct')).reduce((sum,item) => sum + weight(item), 0);
-    const total = graded.reduce((sum,item) => sum + weight(item), 0);
-    const scoreText = document.querySelector('#scoreNum')?.textContent || '';
-    const scoreMatch = scoreText.match(/(\\d+)\\s*\\/\\s*(\\d+)/);
-    const finalScore = total > 0 ? score : Number(scoreMatch?.[1] || 0);
-    const finalTotal = total > 0 ? total : Number(scoreMatch?.[2] || 0);
-    if (finalTotal > 0) {
-      window.parent.postMessage({
-        type: 'tingjian:score',
-        exerciseId: ${JSON.stringify(exerciseId)},
-        score: finalScore,
-        total: finalTotal,
-        practicedAt: new Date().toISOString()
-      }, '*');
-    }
-  }, 300);
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('#finish-btn,#btnFinish')?.addEventListener('click', reportScore);
-  });
-})();
-</script>`;
+const bridgeScript = (exerciseId) =>
+  `<script src="../../score-bridge.js" data-exercise-id="${exerciseId}"></script>`;
 
 const manifest = [];
 for (const part of ["P1", "P2", "P3", "P4"]) {
