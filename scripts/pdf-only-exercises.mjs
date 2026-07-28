@@ -88,82 +88,42 @@ export const pdfOnlyExercises = {
       {
         n: 1,
         answers: ["diving"],
-        transcript:
-          "On another day, you have a choice of two activities: the first is instruction in diving in the South China Sea, not a certificate course but just an introduction.",
-        explanation:
-          "先判断空格要填能与 lessons 搭配的名词。录音进入 two activities 后，第一项是 instruction in diving，因此填 diving。这里 instruction / course 对应 lessons。",
       },
       {
         n: 2,
         answers: ["jungle"],
-        transcript:
-          "You can spend the day on a trek through the jungle near the beach.",
-        explanation:
-          "介词 in 后需要地点。听到 trek 后继续捕捉地点，through the jungle 对应题目中的 trek in the jungle；spend the day on a trek 对应 one-day trek。",
       },
       {
         n: 3,
         answers: ["dance"],
-        transcript:
-          "We used to take people to a Vietnamese Opera but that didn’t prove so popular, so now we include a dance show.",
-        explanation:
-          "used to 引出的 opera 是过去的安排，but 和 so now 表明现在改为 dance show。show 与 performance 同义，因此填 dance。",
       },
       {
         n: 4,
         answers: ["1450", "1,450"],
-        transcript:
-          "The holiday used to be 1,600 pounds, but it’s just been reduced to 1,450 pounds.",
-        explanation:
-          "题目需要价格。1,600 是 used to 后的旧价，but 后的 reduced to 1,450 才是现价。",
       },
       {
         n: 5,
         answers: ["birds"],
-        transcript:
-          "It includes a walk in the hills of one of their country parks where you have the chance to see birds of all sorts.",
-        explanation:
-          "hills 和 country park 是定位词。see birds 对应 look at birds，go to the hills 对应 a walk in the hills。",
       },
       {
         n: 6,
         answers: ["dinner"],
-        transcript:
-          "You go with a trained escort, and it includes dinner in a monastery.",
-        explanation:
-          "空格需要名词。答案 dinner 出现在定位信息 in a monastery 之前，属于答案前置；不能等听到 monastery 后才开始找答案。",
       },
       {
         n: 7,
         answers: ["electronics"],
-        transcript:
-          "There’s another day when we take you around an electronics factory.",
-        explanation:
-          "an ___ factory 需要元音音素开头的名词或形容词。take you around 对应 visit，electronics factory 是最终地点；后面的 ceramics factory 是干扰信息。",
       },
       {
         n: 8,
         answers: ["Japan"],
-        transcript:
-          "I’ve always wanted to go to Korea but not on this trip, and I’ve been to Thailand ... but what about your Japan package?",
-        explanation:
-          "题目需要国家名。Korea 后有 not on this trip，Thailand 是已经去过的地方；最后实际询问的是 Japan package。",
       },
       {
         n: 9,
         answers: ["costume"],
-        transcript:
-          "That tour includes a terrific trip to a museum of traditional costume.",
-        explanation:
-          "traditional 后需要名词。录音直接出现 museum of traditional costume；trip to a museum 对应 visit a museum。",
       },
       {
         n: 10,
         answers: ["fish"],
-        transcript:
-          "A crafts market, I think. Well, we do go to a market, but it’s one that sells fish and it’s one of the largest in the world.",
-        explanation:
-          "crafts market 是猜测，随后 but 纠正为 sells fish。largest 对应题目中的 big，因此填 fish。",
       },
     ],
   },
@@ -183,8 +143,6 @@ export const pdfOnlyExercises = {
           ["C", "a different kind of commodity."],
         ],
         answer: "C",
-        explanation:
-          "录音说它从一种经济实惠的清洁用品，逐渐变成 beauty product，说明商品属性发生了变化，而不是单纯更便宜或更卫生。",
       },
       {
         n: 22,
@@ -195,8 +153,6 @@ export const pdfOnlyExercises = {
           ["C", "Their name is inaccurate."],
         ],
         answer: "A",
-        explanation:
-          "研究表明 bad hair days 并非想象出来的，而且男女受到的影响相同。因此 A 正确，B 被 equally affected 排除。",
       },
       {
         n: 23,
@@ -208,8 +164,6 @@ export const pdfOnlyExercises = {
           ["C", "The presence of the chemicals is rarely publicised."],
         ],
         answer: "C",
-        explanation:
-          "他们列举常见化学成分，并指出 manufacturers keep it quiet、包装上对此保持沉默，对应 rarely publicised。",
       },
       {
         n: 24,
@@ -221,8 +175,6 @@ export const pdfOnlyExercises = {
           ["C", "takes a lot longer."],
         ],
         answer: "B",
-        explanation:
-          "直接印瓶身既更便宜又更快，但厂家认为它不能增强视觉效果、显得廉价，所以问题在外观。",
       },
       {
         n: 25,
@@ -234,8 +186,6 @@ export const pdfOnlyExercises = {
           ["C", "the source of recycled plastic in shampoo bottles."],
         ],
         answer: "B",
-        explanation:
-          "他们提出厂家可以通过减轻包装重量来提升环保性，并决定调查不同厂家是否真的这样做。",
       },
       {
         n: 26,
@@ -247,8 +197,6 @@ export const pdfOnlyExercises = {
           ["C", "willingness to try new products."],
         ],
         answer: "C",
-        explanation:
-          "Michael 不信任所谓半价促销，也不固定购买少数品牌；遇到没见过的牌子，他通常愿意试一试。",
       },
     ],
     matching: {
@@ -263,29 +211,21 @@ export const pdfOnlyExercises = {
           n: 27,
           label: "Zing",
           answer: "B",
-          explanation:
-            "广告展示幸福家庭、漂亮住宅和健康孩子，让观众产生“希望自己的生活也这样”的感觉，核心是令人羡慕的生活方式。",
         },
         {
           n: 28,
           label: "Splash",
           answer: "F",
-          explanation:
-            "广告围绕一对情侣是否分手展开故事，结尾两人继续在一起，核心吸引点是 romantic interest。",
         },
         {
           n: 29,
           label: "Just go",
           answer: "E",
-          explanation:
-            "广告提供大量产品成分和技术信息，使消费者相信它能完成预期功效，强调 product reliability。",
         },
         {
           n: 30,
           label: "Brozene",
           answer: "A",
-          explanation:
-            "广告几乎没有解说，只使用柔和音乐和平静画面，整体效果是 calming，因此对应 relaxation。",
         },
       ],
     },
@@ -310,8 +250,6 @@ export const pdfOnlyExercises = {
           ["E", "improved spatial awareness"],
         ],
         answers: ["C", "E"],
-        explanation:
-          "两人用 less obvious、had never occurred to me 和 never associated 等表达说明，注意力提升与空间意识是他们此前没想到的。记忆、想象力和精细动作并未同时让两人意外。",
       },
       {
         numbers: "23 and 24",
@@ -326,8 +264,6 @@ export const pdfOnlyExercises = {
           ["E", "writing very slowly"],
         ],
         answers: ["A", "C"],
-        explanation:
-          "方格纸让孩子每格写一个字母，能直接纠正字母间距；会在用力过大时发光的笔能纠正书写压力。这两种都被称为 simple solution。",
       },
     ],
     choices: [
@@ -341,8 +277,6 @@ export const pdfOnlyExercises = {
           ["C", "Children react more positively if they make a mistake."],
         ],
         answer: "C",
-        explanation:
-          "在键盘上出错不会那么令人沮丧，孩子更愿意尝试；录音同时明确说流利度并不会提高得更快。",
       },
       {
         n: 26,
@@ -354,8 +288,6 @@ export const pdfOnlyExercises = {
           ["C", "most teachers in the UK prefer a traditional approach to handwriting."],
         ],
         answer: "A",
-        explanation:
-          "连笔书写对有学习困难的儿童尤其难，因为连接字母很有挑战性，说明它会使这一特定群体处于不利地位。",
       },
       {
         n: 27,
@@ -367,8 +299,6 @@ export const pdfOnlyExercises = {
           ["C", "Candidates write more slowly and produce shorter answers."],
         ],
         answer: "A",
-        explanation:
-          "研究证实书写不清会影响考试结果；如果考官看不懂答卷，分数会受到影响。录音没有说答案变短。",
       },
       {
         n: 28,
@@ -380,8 +310,6 @@ export const pdfOnlyExercises = {
           ["C", "People will dislike handwriting on digital devices."],
         ],
         answer: "B",
-        explanation:
-          "男生认为情况不会有太大变化，教师理解手写的价值，并把它称为基本生活技能，所以儿童仍会学习手写。",
       },
       {
         n: 29,
@@ -393,8 +321,6 @@ export const pdfOnlyExercises = {
           ["C", "read old documents."],
         ],
         answer: "B",
-        explanation:
-          "她以自己的糟糕拼写和不一致的标点为例，认为这是缺少手写练习造成的。记笔记和读旧文件不是她描述的个人困难。",
       },
       {
         n: 30,
@@ -405,8 +331,6 @@ export const pdfOnlyExercises = {
           ["C", "regretful that they have lost the habit"],
         ],
         answer: "C",
-        explanation:
-          "男生说自己怀念手写并觉得可惜，女生表示感受相同；两人遗憾自己已失去经常手写的习惯。",
       },
     ],
   },
@@ -426,8 +350,6 @@ export const pdfOnlyExercises = {
           ["C", "They are childish."],
         ],
         answer: "B",
-        explanation:
-          "Josh 的结论是画面背后的构成和方法比表面看起来复杂，因此选 complex；easy to copy 和 childish 是干扰项。",
       },
       {
         n: 22,
@@ -438,8 +360,6 @@ export const pdfOnlyExercises = {
           ["C", "it featured the wrong colours."],
         ],
         answer: "A",
-        explanation:
-          "最初被怀疑的关键是没有来源记录或证明文件；购买价格和颜色不是判定它为赝品的直接原因。",
       },
       {
         n: 23,
@@ -451,8 +371,6 @@ export const pdfOnlyExercises = {
           ["C", "how the paint was applied"],
         ],
         answer: "B",
-        explanation:
-          "基金会的检测依据是画中使用的颜料类型与作品年代或画家材料不符，因此选 the type of paint used。",
       },
       {
         n: 24,
@@ -463,8 +381,6 @@ export const pdfOnlyExercises = {
           ["C", "Experts from the science and art worlds should work together."],
         ],
         answer: "C",
-        explanation:
-          "两人认为科学检测能提供证据，但不能完全取代艺术史和专家判断；最佳方式是两个领域合作。",
       },
     ],
     flow: {
@@ -480,8 +396,6 @@ export const pdfOnlyExercises = {
           before: "Seracini used ",
           after: " to help make a model of the building.",
           answer: "D",
-          explanation:
-            "激光扫描仪用于获取建筑空间数据并建立模型，因此选 D, a laser scanner。",
         },
         {
           n: 26,
@@ -489,8 +403,6 @@ export const pdfOnlyExercises = {
           after:
             " to reveal different materials in the walls. He found the original architecture.",
           answer: "G",
-          explanation:
-            "热成像相机可显示墙体材料和温度差异，帮助识别被覆盖的原始建筑结构，因此选 G。",
         },
         {
           n: 27,
@@ -498,16 +410,12 @@ export const pdfOnlyExercises = {
             "Seracini guessed that Da Vinci painted his masterpiece on the east wall, in a space that used to hold ",
           after: ".",
           answer: "F",
-          explanation:
-            "该空间原先是窗户或开口所在的位置，因此曾经容纳的是 glass，选 F。",
         },
         {
           n: 28,
           before: "Seracini analysed the wall using ",
           after: " and discovered a second wall behind it.",
           answer: "E",
-          explanation:
-            "雷达设备能探测墙后空隙和第二层墙体，因此选 E, a radar machine。",
         },
         {
           n: 29,
@@ -515,16 +423,12 @@ export const pdfOnlyExercises = {
             "Seracini hypothesised that the Da Vinci painting is still there on the original ",
           after: " wall.",
           answer: "C",
-          explanation:
-            "推测中的原始壁画位于后来墙体后方的石墙上，因此选 C, stone。",
         },
         {
           n: 30,
           before: "Seracini is using ",
           after: " to prove his theory.",
           answer: "B",
-          explanation:
-            "最后使用伽马射线技术寻找颜料中的元素证据，以验证壁画是否存在，因此选 B。",
         },
       ],
     },
@@ -623,82 +527,42 @@ export const pdfOnlyExercises = {
       {
         n: 31,
         answers: ["write"],
-        transcript:
-          "Before 3000 BC, people were dependent on being able to remember things because humans could not write; the skill hadn’t been developed.",
-        explanation:
-          "空格需要动词。relied on 对应 were dependent on，题目中的 unable to 对应录音中的 could not，因此答案是 write。",
       },
       {
         n: 32,
         answers: ["plants"],
-        transcript:
-          "It was essential to understand which foods were poisonous. This was particularly true of plants because they sometimes looked very similar.",
-        explanation:
-          "dangerous 对应 poisonous。particularly true of plants 对应题目中的 some types of，且 plants 是符合语义的复数名词。",
       },
       {
         n: 33,
         answers: ["place"],
-        transcript:
-          "It’s much easier to remember information if we connect it with one particular place.",
-        explanation:
-          "easier to remember 对应 easier to recall，connect with 对应 linked to；a 后需要单数名词，所以填 place。",
       },
       {
         n: 34,
         answers: ["sight"],
-        transcript:
-          "The Greeks believed people could use their human senses to improve memory, and this was particularly true when it came to sight.",
-        explanation:
-          "senses 是定位词，particularly true 对应 especially；录音重点指出 sight，所以填 sight。",
       },
       {
         n: 35,
         answers: ["speech"],
-        transcript:
-          "In ancient Rome, one of the greatest skills was the ability to give an impressive speech in public, and memory was one of the keys to doing that.",
-        explanation:
-          "give an impressive speech 对应 making a good speech，memory was one of the keys 对应 depended on memory。",
       },
       {
         n: 36,
         answers: ["natural"],
-        transcript:
-          "Cicero described a memory that can be developed, called artificial memory, and another type which he called natural.",
-        explanation:
-          "可发展的 artificial memory 已经出现在题干前半句，是干扰项；in addition to 要填另一类记忆，因此答案是 natural。",
       },
       {
         n: 37,
         answers: ["religion"],
-        transcript:
-          "The Scholastics used these techniques when they were instructing pupils about religion.",
-        explanation:
-          "instructing 对应 teach。题目问的是教学内容，不是教学对象 pupils，因此填 religion。",
       },
       {
         n: 38,
         answers: ["science"],
-        transcript:
-          "In the 17th century, people thought that science had the answers to most human questions.",
-        explanation:
-          "had the answers to questions 对应 could provide explanations。答案位于从句主语位置，属于答案前置。",
       },
       {
         n: 39,
         answers: ["dates"],
-        transcript:
-          "Children were expected to learn lots of facts by constantly repeating things like dates.",
-        explanation:
-          "19th century、children 和 facts 连续定位；constantly repeating 对应 using repetition，例子是 dates。",
       },
       {
         n: 40,
         answers: ["journalist"],
-        transcript:
-          "Psychologists found that S never made notes about anything, although he was a journalist and never forgot facts.",
-        explanation:
-          "work as a 后需要职业单数名词。录音明确说明 S was a journalist，因此填 journalist。",
       },
     ],
     vocabulary: [
@@ -732,12 +596,7 @@ const answerPanel = (question, answerText) => `
     <div class="answer-heading"><span class="answer-question">Q${escapeHtml(
       question.n ?? question.label ?? "",
     )}</span><strong class="result-label"></strong><span>答案：${escapeHtml(answerText)}</span></div>
-    ${
-      question.transcript
-        ? `<p class="transcript"><b>录音定位</b>${escapeHtml(question.transcript)}</p>`
-        : ""
-    }
-    <p><b>解析</b>${escapeHtml(question.explanation)}</p>
+    <p class="source-note">源文件未提供逐题解析。</p>
   </div>`;
 
 const textResult = (question) => `

@@ -159,6 +159,82 @@ test("every exercise can render an answer review without unsafe answer-key reads
   });
 });
 
+test("multiple-choice groups award one mark per correct option", async () => {
+  const bridgeSource = await readFile(
+    new URL("../public/score-bridge.js", import.meta.url),
+    "utf8",
+  );
+  const listeners = {};
+  const context = {
+    window: {
+      addEventListener(type, listener) {
+        listeners[type] = listener;
+      },
+      parent: { postMessage() {} },
+      setTimeout() {},
+    },
+    document: {
+      currentScript: { dataset: { exerciseId: "test" } },
+      createElement() {
+        return {};
+      },
+      head: { appendChild() {} },
+      querySelector() {
+        return null;
+      },
+      querySelectorAll() {
+        return [];
+      },
+    },
+    Set,
+  };
+  new vm.Script(bridgeSource).runInNewContext(context);
+  const { scoreMultipleSelection } = context.window.TingjianScoreBridge;
+  assert.equal(scoreMultipleSelection(["C", "E"], ["C", "E"]), 2);
+  assert.equal(scoreMultipleSelection(["E", "C"], ["C", "E"]), 2);
+  assert.equal(scoreMultipleSelection(["C", "A"], ["C", "E"]), 1);
+  assert.equal(scoreMultipleSelection(["C"], ["C", "E"]), 1);
+  assert.equal(scoreMultipleSelection(["A", "B"], ["C", "E"]), 0);
+
+  let configuredMultipleGroups = 0;
+  let configuredMultipleMarks = 0;
+  let sharedBridgePages = 0;
+  for (const exercise of exercises) {
+    const html = await readFile(
+      new URL(`../public/exercises/${exercise.id}/index.html`, import.meta.url),
+      "utf8",
+    );
+    const configuration = html.match(
+      /<script[^>]*id=["']task-configuration["'][^>]*>([\s\S]*?)<\/script>/i,
+    )?.[1];
+    if (html.includes('src="../../score-bridge.js"')) sharedBridgePages += 1;
+    if (!configuration) continue;
+    const configContext = {};
+    new vm.Script(
+      configuration.replace(
+        /\bconst\s+CONFIG_DATA\s*=/,
+        "globalThis.CONFIG_DATA =",
+      ),
+    ).runInNewContext(configContext);
+    for (const [key, answers] of Object.entries(
+      configContext.CONFIG_DATA.answerKey.multiple || {},
+    )) {
+      configuredMultipleGroups += 1;
+      configuredMultipleMarks += answers.length;
+      const range = key.match(/q(\d+)_(\d+)/);
+      assert.ok(range, `${exercise.id} has an invalid multiple-choice key ${key}`);
+      assert.equal(
+        answers.length,
+        Number(range[2]) - Number(range[1]) + 1,
+        `${exercise.id} ${key} has the wrong IELTS mark weight`,
+      );
+    }
+  }
+  assert.equal(configuredMultipleGroups, 11);
+  assert.equal(configuredMultipleMarks, 23);
+  assert.equal(sharedBridgePages, 70);
+});
+
 test("every exercise has audio, grading controls, and score reporting", async () => {
   for (const exercise of exercises) {
     const root = new URL(`../public/exercises/${exercise.id}/`, import.meta.url);
@@ -168,8 +244,30 @@ test("every exercise has audio, grading controls, and score reporting", async ()
     const audio = await stat(new URL(audioName, root));
     assert.ok(audio.size > 500_000, `${exercise.id} audio is unexpectedly small`);
     assert.match(html, /id=["'](?:finish-btn|btnFinish)["']/i, `${exercise.id} has no submit control`);
-    assert.match(html, /tingjian:score/, `${exercise.id} does not report its score`);
+    assert.match(
+      html,
+      /tingjian:score|score-bridge\.js/,
+      `${exercise.id} does not report its score`,
+    );
   }
+});
+
+test("the site does not present model-generated text as source explanation", async () => {
+  let visibleExplanationBlocks = 0;
+  let sourceNotes = 0;
+  let transcriptPages = 0;
+  for (const exercise of exercises) {
+    const html = await readFile(
+      new URL(`../public/exercises/${exercise.id}/index.html`, import.meta.url),
+      "utf8",
+    );
+    visibleExplanationBlocks += (html.match(/<b>解析<\/b>/g) ?? []).length;
+    sourceNotes += (html.match(/源文件未提供逐题解析/g) ?? []).length;
+    if (html.includes("transcriptLines:")) transcriptPages += 1;
+  }
+  assert.equal(visibleExplanationBlocks, 0);
+  assert.equal(sourceNotes, 48);
+  assert.equal(transcriptPages, 69);
 });
 
 test("PDF-only exercises preserve their source-specific layouts and wording", async () => {
@@ -195,6 +293,11 @@ test("PDF-only exercises preserve their source-specific layouts and wording", as
   assert.match(shampoo, /product reliability/);
 
   assert.equal((handwriting.match(/data-type="multi"/g) ?? []).length, 2);
+  assert.equal((handwriting.match(/data-weight="2"/g) ?? []).length, 2);
+  assert.match(
+    handwriting,
+    /earned=values\.filter\(value=>answers\.includes\(value\)\)\.length/,
+  );
   assert.match(handwriting, /not spacing letters correctly/);
   assert.match(handwriting, /writing very slowly/);
   assert.match(handwriting, /regretful that they have lost the habit/);
