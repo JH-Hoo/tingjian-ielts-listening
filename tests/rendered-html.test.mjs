@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import { readFile, stat } from "node:fs/promises";
 import test from "node:test";
+import vm from "node:vm";
+import { answerKeySafetyIssues } from "../scripts/grading-safety.mjs";
 
 const manifestSource = await readFile(new URL("../app/exercises.ts", import.meta.url), "utf8");
 const exercises = JSON.parse(
@@ -84,6 +86,76 @@ test("every exercise offers 1.2x audio playback", async () => {
       /<option[^>]+value=["']1\.2["']/i,
       `${exercises[index].id} has no 1.2x speed option`,
     );
+  });
+});
+
+test("every exercise can render an answer review without unsafe answer-key reads", async () => {
+  const pages = await Promise.all(exercises.map((exercise) =>
+    readFile(new URL(`../public/exercises/${exercise.id}/index.html`, import.meta.url), "utf8")
+  ));
+  pages.forEach((html, index) => {
+    const exerciseId = exercises[index].id;
+    assert.deepEqual(
+      answerKeySafetyIssues(html),
+      [],
+      `${exerciseId} directly reads an undefined answer-key collection`,
+    );
+    const hasAnswerReview =
+      html.includes('class="answer-panel"') ||
+      (html.includes("results-in-page") && html.includes("Correct Answer")) ||
+      (html.includes("renderReview") && html.includes("scoreNum"));
+    assert.ok(hasAnswerReview, `${exerciseId} has no answer-review output`);
+
+    const configuration = html.match(
+      /<script[^>]*id=["']task-configuration["'][^>]*>([\s\S]*?)<\/script>/i,
+    )?.[1];
+    if (configuration) {
+      const context = {};
+      new vm.Script(
+        configuration.replace(
+          /\bconst\s+CONFIG_DATA\s*=/,
+          "globalThis.CONFIG_DATA =",
+        ),
+      ).runInNewContext(context);
+      for (const question of context.CONFIG_DATA.questionList) {
+        const answerKey = `q${String(question).replace("-", "_")}`;
+        const matchingCollections = Object.entries(context.CONFIG_DATA.answerKey)
+          .filter(([, answers]) =>
+            answers &&
+            typeof answers === "object" &&
+            Object.prototype.hasOwnProperty.call(answers, answerKey)
+          );
+        assert.equal(
+          matchingCollections.length,
+          1,
+          `${exerciseId} question ${question} does not have exactly one configured answer`,
+        );
+      }
+    } else if (html.includes("renderReview") && html.includes("scoreNum")) {
+      assert.equal(
+        (html.match(/\bdata-answer=/g) ?? []).length,
+        10,
+        `${exerciseId} does not configure all 10 answers`,
+      );
+    } else {
+      const gradableTags = [...html.matchAll(
+        /<[^>]*class="[^"]*\bgradable\b[^"]*"[^>]*>/g,
+      )].map((match) => match[0]);
+      assert.ok(gradableTags.length > 0, `${exerciseId} has no gradable questions`);
+      assert.ok(
+        gradableTags.every((tag) => /\bdata-answers?=/.test(tag)),
+        `${exerciseId} has a gradable question without an answer`,
+      );
+    }
+
+    let scriptNumber = 0;
+    for (const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)) {
+      scriptNumber += 1;
+      assert.doesNotThrow(
+        () => new vm.Script(match[1], { filename: `${exerciseId}#script-${scriptNumber}` }),
+        `${exerciseId} contains invalid grading JavaScript`,
+      );
+    }
   });
 });
 

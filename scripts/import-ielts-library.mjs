@@ -6,6 +6,7 @@ import {
   pdfOnlyExercises,
   renderPdfOnlyExercise,
 } from "./pdf-only-exercises.mjs";
+import { normalizeAnswerKeyCollections } from "./grading-safety.mjs";
 
 const sourceRoot = process.argv[2];
 if (!sourceRoot || !existsSync(sourceRoot)) {
@@ -86,7 +87,7 @@ for (const part of ["P1", "P2", "P3", "P4"]) {
 
     const missingKey = `${part}-${sourceNo}`;
     if (html) {
-      let page = readFileSync(html, "utf8");
+      let page = normalizeAnswerKeyCollections(readFileSync(html, "utf8"));
       page = page.replace(/<\/body>/i, `${bridgeScript(exerciseId)}</body>`);
       writeFileSync(join(exerciseDir, "index.html"), page);
     } else if (pdfOnlyExercises[missingKey]) {
