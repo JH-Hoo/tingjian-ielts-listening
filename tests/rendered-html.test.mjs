@@ -252,7 +252,7 @@ test("every exercise has audio, grading controls, and score reporting", async ()
   }
 });
 
-test("the site does not present model-generated text as source explanation", async () => {
+test("transcript-derived explanations are labelled and available after grading", async () => {
   let visibleExplanationBlocks = 0;
   let sourceNotes = 0;
   let transcriptPages = 0;
@@ -266,8 +266,30 @@ test("the site does not present model-generated text as source explanation", asy
     if (html.includes("transcriptLines:")) transcriptPages += 1;
   }
   assert.equal(visibleExplanationBlocks, 0);
-  assert.equal(sourceNotes, 48);
+  assert.equal(sourceNotes, 0);
   assert.equal(transcriptPages, 69);
+  const [bridge, explanationFile] = await Promise.all([
+    readFile(new URL("../public/explanation-bridge.js", import.meta.url), "utf8"),
+    readFile(new URL("../public/explanations.json", import.meta.url), "utf8"),
+  ]);
+  assert.match(bridge, /根据听力文本整理/);
+  assert.match(bridge, /听力原文/);
+  assert.match(bridge, /解析/);
+  assert.match(bridge, /#finish-btn,#btnFinish/);
+  const explanations = JSON.parse(explanationFile);
+  assert.equal(Object.keys(explanations.exercises).length, 75);
+  assert.equal(
+    Object.values(explanations.exercises).reduce(
+      (sum, page) =>
+        sum +
+        Object.values(page).reduce(
+          (pageSum, item) => pageSum + item.numbers.length,
+          0,
+        ),
+      0,
+    ),
+    750,
+  );
 });
 
 test("PDF-only exercises preserve their source-specific layouts and wording", async () => {

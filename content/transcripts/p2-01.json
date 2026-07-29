@@ -1,0 +1,1088 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "work/models/ggml-small.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:12,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 12120
+			},
+			"text": " Business students called Janet and Michael discussing their research into the marketing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,120",
+				"to": "00:00:39,360"
+			},
+			"offsets": {
+				"from": 12120,
+				"to": 39360
+			},
+			"text": " of different kinds of shampoo."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,120",
+				"to": "00:01:10,440"
+			},
+			"offsets": {
+				"from": 42120,
+				"to": 70440
+			},
+			"text": " Now listen carefully, and answer questions 21 to 26."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,440",
+				"to": "00:01:17,040"
+			},
+			"offsets": {
+				"from": 70440,
+				"to": 77040
+			},
+			"text": " Hi Janet, how are you getting on with the shampoo marketing project?"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,040",
+				"to": "00:01:23,520"
+			},
+			"offsets": {
+				"from": 77040,
+				"to": 83520
+			},
+			"text": " Hi Michael, it's interesting, I've read how shampoo marketing has developed over the last"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:23,520",
+				"to": "00:01:24,520"
+			},
+			"offsets": {
+				"from": 83520,
+				"to": 84520
+			},
+			"text": " hundred years."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:24,520",
+				"to": "00:01:27,920"
+			},
+			"offsets": {
+				"from": 84520,
+				"to": 87920
+			},
+			"text": " Oh, I didn't think we needed to do that."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:27,920",
+				"to": "00:01:34,520"
+			},
+			"offsets": {
+				"from": 87920,
+				"to": 94520
+			},
+			"text": " True, but I'm interested anyway. Basically, what was once sold as an economical way of"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:34,520",
+				"to": "00:01:38,600"
+			},
+			"offsets": {
+				"from": 94520,
+				"to": 98600
+			},
+			"text": " getting your hair clean has evolved into a beauty product."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:38,600",
+				"to": "00:01:39,600"
+			},
+			"offsets": {
+				"from": 98600,
+				"to": 99600
+			},
+			"text": " Right."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:39,600",
+				"to": "00:01:45,640"
+			},
+			"offsets": {
+				"from": 99600,
+				"to": 105640
+			},
+			"text": " And shampoo is interesting, because it's a key influence in how we see ourselves."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:45,640",
+				"to": "00:01:48,120"
+			},
+			"offsets": {
+				"from": 105640,
+				"to": 108120
+			},
+			"text": " You've heard of bad hair days."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:48,120",
+				"to": "00:01:53,080"
+			},
+			"offsets": {
+				"from": 108120,
+				"to": 113080
+			},
+			"text": " When your hair looks bad, maybe you didn't wash it and you feel bad about it."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:53,080",
+				"to": "00:01:54,760"
+			},
+			"offsets": {
+				"from": 113080,
+				"to": 114760
+			},
+			"text": " Heard of them, yes."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,760",
+				"to": "00:01:55,760"
+			},
+			"offsets": {
+				"from": 114760,
+				"to": 115760
+			},
+			"text": " Had one?"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:55,760",
+				"to": "00:01:56,760"
+			},
+			"offsets": {
+				"from": 115760,
+				"to": 116760
+			},
+			"text": " No."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:56,760",
+				"to": "00:01:58,560"
+			},
+			"offsets": {
+				"from": 116760,
+				"to": 118560
+			},
+			"text": " Don't think they're real."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:58,560",
+				"to": "00:01:59,560"
+			},
+			"offsets": {
+				"from": 118560,
+				"to": 119560
+			},
+			"text": " Bad hair days?"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:59,560",
+				"to": "00:02:00,560"
+			},
+			"offsets": {
+				"from": 119560,
+				"to": 120560
+			},
+			"text": " Come on."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:00,560",
+				"to": "00:02:06,400"
+			},
+			"offsets": {
+				"from": 120560,
+				"to": 126400
+			},
+			"text": " Well, whatever you want to call them, that's not what research from Yale is suggesting."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:06,400",
+				"to": "00:02:11,540"
+			},
+			"offsets": {
+				"from": 126400,
+				"to": 131540
+			},
+			"text": " They're not just imagined, and both sexes are equally affected by them."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:11,540",
+				"to": "00:02:16,040"
+			},
+			"offsets": {
+				"from": 131540,
+				"to": 136040
+			},
+			"text": " And when they happen, people tend to perform and feel worse than usual."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:16,040",
+				"to": "00:02:17,040"
+			},
+			"offsets": {
+				"from": 136040,
+				"to": 137040
+			},
+			"text": " Right."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:17,040",
+				"to": "00:02:24,240"
+			},
+			"offsets": {
+				"from": 137040,
+				"to": 144240
+			},
+			"text": " And I've been reading about shampoo ingredients, chemicals like sodium lauryl sulfate."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:24,240",
+				"to": "00:02:26,640"
+			},
+			"offsets": {
+				"from": 144240,
+				"to": 146640
+			},
+			"text": " Methyl chloride."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:26,640",
+				"to": "00:02:32,840"
+			},
+			"offsets": {
+				"from": 146640,
+				"to": 152840
+			},
+			"text": " Many of the manufacturers tend to use these, or others like them, though they keep it quiet."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:32,840",
+				"to": "00:02:37,880"
+			},
+			"offsets": {
+				"from": 152840,
+				"to": 157880
+			},
+			"text": " Right, when it comes to the product packaging, they're strangely silent about it."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:37,880",
+				"to": "00:02:43,520"
+			},
+			"offsets": {
+				"from": 157880,
+				"to": 163520
+			},
+			"text": " Another area it would be interesting to investigate is the labeling on bottles."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:43,520",
+				"to": "00:02:50,640"
+			},
+			"offsets": {
+				"from": 163520,
+				"to": 170640
+			},
+			"text": " Apparently, printing directly onto the bottles costs about 50% less than sticking a printed"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:50,640",
+				"to": "00:02:54,520"
+			},
+			"offsets": {
+				"from": 170640,
+				"to": 174520
+			},
+			"text": " label on, because it's a much quicker process."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:54,520",
+				"to": "00:03:00,640"
+			},
+			"offsets": {
+				"from": 174520,
+				"to": 180640
+			},
+			"text": " But manufacturers are lukewarm about this because it doesn't enhance the visual impact"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:00,640",
+				"to": "00:03:02,240"
+			},
+			"offsets": {
+				"from": 180640,
+				"to": 182240
+			},
+			"text": " of the bottle."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:02,240",
+				"to": "00:03:05,560"
+			},
+			"offsets": {
+				"from": 182240,
+				"to": 185560
+			},
+			"text": " It comes across as a bit cheap."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:05,560",
+				"to": "00:03:08,260"
+			},
+			"offsets": {
+				"from": 185560,
+				"to": 188260
+			},
+			"text": " We need to think about environmental issues."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:08,260",
+				"to": "00:03:12,760"
+			},
+			"offsets": {
+				"from": 188260,
+				"to": 192760
+			},
+			"text": " I was surprised how little recycled plastic goes into the bottles."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:12,760",
+				"to": "00:03:18,280"
+			},
+			"offsets": {
+				"from": 192760,
+				"to": 198280
+			},
+			"text": " I think it's because light-colored plastic is more difficult to make from recycled stuff."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:18,280",
+				"to": "00:03:23,780"
+			},
+			"offsets": {
+				"from": 198280,
+				"to": 203780
+			},
+			"text": " Yeah, but manufacturers can make their packaging more environmentally friendly just by making"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:23,780",
+				"to": "00:03:25,680"
+			},
+			"offsets": {
+				"from": 203780,
+				"to": 205680
+			},
+			"text": " it less heavy."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:25,680",
+				"to": "00:03:29,720"
+			},
+			"offsets": {
+				"from": 205680,
+				"to": 209720
+			},
+			"text": " I'd like to find out whether some of them actually do when we do the research."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:29,720",
+				"to": "00:03:32,160"
+			},
+			"offsets": {
+				"from": 209720,
+				"to": 212160
+			},
+			"text": " Yes, that's worth looking into."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:32,160",
+				"to": "00:03:38,320"
+			},
+			"offsets": {
+				"from": 212160,
+				"to": 218320
+			},
+			"text": " Thinking about you as a customer, what's important when choosing shampoo?"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:38,320",
+				"to": "00:03:41,200"
+			},
+			"offsets": {
+				"from": 218320,
+				"to": 221200
+			},
+			"text": " I'm always wary of special offers."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:41,200",
+				"to": "00:03:46,700"
+			},
+			"offsets": {
+				"from": 221200,
+				"to": 226700
+			},
+			"text": " When something's flagged as being half price, it rarely is, really."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:46,700",
+				"to": "00:03:52,160"
+			},
+			"offsets": {
+				"from": 226700,
+				"to": 232160
+			},
+			"text": " But if there's a make I've never seen before, I'm usually up for giving it a go, rather"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:52,160",
+				"to": "00:03:56,440"
+			},
+			"offsets": {
+				"from": 232160,
+				"to": 236440
+			},
+			"text": " than sticking to one or two favorite brands all my life."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:56,440",
+				"to": "00:04:00,520"
+			},
+			"offsets": {
+				"from": 236440,
+				"to": 240520
+			},
+			"text": " Interesting."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:00,520",
+				"to": "00:04:05,760"
+			},
+			"offsets": {
+				"from": 240520,
+				"to": 245760
+			},
+			"text": " Before you hear the rest of the discussion, you have some time to look at questions twenty-seven"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:05,760",
+				"to": "00:04:26,920"
+			},
+			"offsets": {
+				"from": 245760,
+				"to": 266920
+			},
+			"text": " to thirty."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:26,920",
+				"to": "00:04:33,980"
+			},
+			"offsets": {
+				"from": 266920,
+				"to": 273980
+			},
+			"text": " Now listen and answer questions twenty-seven to thirty."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:33,980",
+				"to": "00:04:38,280"
+			},
+			"offsets": {
+				"from": 273980,
+				"to": 278280
+			},
+			"text": " Shall we discuss some of these shampoo advertisements, then?"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:38,280",
+				"to": "00:04:44,520"
+			},
+			"offsets": {
+				"from": 278280,
+				"to": 284520
+			},
+			"text": " And try and identify what sort of psychological response each one is trying to get from the"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:44,520",
+				"to": "00:04:45,520"
+			},
+			"offsets": {
+				"from": 284520,
+				"to": 285520
+			},
+			"text": " viewer."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:45,520",
+				"to": "00:04:48,120"
+			},
+			"offsets": {
+				"from": 285520,
+				"to": 288120
+			},
+			"text": " Okay, what about Zing?"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:48,120",
+				"to": "00:04:53,360"
+			},
+			"offsets": {
+				"from": 288120,
+				"to": 293360
+			},
+			"text": " Well, it'd probably appeal equally to men and women."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:53,360",
+				"to": "00:05:00,080"
+			},
+			"offsets": {
+				"from": 293360,
+				"to": 300080
+			},
+			"text": " In the ad, we see this happy family, lovely home, healthy, good-looking children..."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:00,080",
+				"to": "00:05:01,720"
+			},
+			"offsets": {
+				"from": 300080,
+				"to": 301720
+			},
+			"text": " With clean hair."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:01,720",
+				"to": "00:05:03,920"
+			},
+			"offsets": {
+				"from": 301720,
+				"to": 303920
+			},
+			"text": " Obviously, yes."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:03,920",
+				"to": "00:05:10,960"
+			},
+			"offsets": {
+				"from": 303920,
+				"to": 310960
+			},
+			"text": " And I think we're supposed to watch the ad and think, \"Wow, if only my life was like"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:10,960",
+				"to": "00:05:11,960"
+			},
+			"offsets": {
+				"from": 310960,
+				"to": 311960
+			},
+			"text": " that.\""
+		},
+		{
+			"timestamps": {
+				"from": "00:05:11,960",
+				"to": "00:05:14,000"
+			},
+			"offsets": {
+				"from": 311960,
+				"to": 314000
+			},
+			"text": " Yeah, I know what you mean."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:14,000",
+				"to": "00:05:19,080"
+			},
+			"offsets": {
+				"from": 314000,
+				"to": 319080
+			},
+			"text": " I think the advertisers want the viewers to almost wish they were the people in the ad."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:19,080",
+				"to": "00:05:20,080"
+			},
+			"offsets": {
+				"from": 319080,
+				"to": 320080
+			},
+			"text": " Sure."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:20,080",
+				"to": "00:05:23,000"
+			},
+			"offsets": {
+				"from": 320080,
+				"to": 323000
+			},
+			"text": " I mean, that's very common in advertising."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:23,000",
+				"to": "00:05:25,400"
+			},
+			"offsets": {
+				"from": 323000,
+				"to": 325400
+			},
+			"text": " But not universal."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:25,400",
+				"to": "00:05:31,480"
+			},
+			"offsets": {
+				"from": 325400,
+				"to": 331480
+			},
+			"text": " You know that ad for splash shampoo that lasts about five minutes and where there's a story?"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:31,480",
+				"to": "00:05:33,000"
+			},
+			"offsets": {
+				"from": 331480,
+				"to": 333000
+			},
+			"text": " Oh, yes."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:33,000",
+				"to": "00:05:35,480"
+			},
+			"offsets": {
+				"from": 333000,
+				"to": 335480
+			},
+			"text": " The commercial about the couple."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:35,480",
+				"to": "00:05:40,600"
+			},
+			"offsets": {
+				"from": 335480,
+				"to": 340600
+			},
+			"text": " And all through the commercial, it's not clear if they're going to break up or stay together."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:40,600",
+				"to": "00:05:41,600"
+			},
+			"offsets": {
+				"from": 340600,
+				"to": 341600
+			},
+			"text": " Exactly."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:41,600",
+				"to": "00:05:45,520"
+			},
+			"offsets": {
+				"from": 341600,
+				"to": 345520
+			},
+			"text": " Well, I think the marketing's been done very cleverly there."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:45,520",
+				"to": "00:05:49,720"
+			},
+			"offsets": {
+				"from": 345520,
+				"to": 349720
+			},
+			"text": " I don't think we're supposed to want to be the characters in the commercial, but we're"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:49,720",
+				"to": "00:05:51,840"
+			},
+			"offsets": {
+				"from": 349720,
+				"to": 351840
+			},
+			"text": " supposed to get to know them a bit."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:51,840",
+				"to": "00:05:55,360"
+			},
+			"offsets": {
+				"from": 351840,
+				"to": 355360
+			},
+			"text": " Yes, well, I thought the story was effective."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:55,360",
+				"to": "00:05:59,800"
+			},
+			"offsets": {
+				"from": 355360,
+				"to": 359800
+			},
+			"text": " You're glad to learn when it's over that they're obviously going to stay together."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:59,800",
+				"to": "00:06:04,920"
+			},
+			"offsets": {
+				"from": 359800,
+				"to": 364920
+			},
+			"text": " But I think the role of the shampoo in the story was a bit thin, to say the least."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:04,920",
+				"to": "00:06:06,640"
+			},
+			"offsets": {
+				"from": 364920,
+				"to": 366640
+			},
+			"text": " Hmm, maybe."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:06,640",
+				"to": "00:06:11,160"
+			},
+			"offsets": {
+				"from": 366640,
+				"to": 371160
+			},
+			"text": " I suppose some manufacturers don't want to bore people with all the science."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:11,160",
+				"to": "00:06:12,160"
+			},
+			"offsets": {
+				"from": 371160,
+				"to": 372160
+			},
+			"text": " Sure."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:12,160",
+				"to": "00:06:15,160"
+			},
+			"offsets": {
+				"from": 372160,
+				"to": 375160
+			},
+			"text": " And then there's the just-go advertisement."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:15,160",
+				"to": "00:06:16,360"
+			},
+			"offsets": {
+				"from": 375160,
+				"to": 376360
+			},
+			"text": " Yes!"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:16,360",
+				"to": "00:06:22,040"
+			},
+			"offsets": {
+				"from": 376360,
+				"to": 382040
+			},
+			"text": " That had lots of technical information about what the shampoo actually consists of."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:22,040",
+				"to": "00:06:27,560"
+			},
+			"offsets": {
+				"from": 382040,
+				"to": 387560
+			},
+			"text": " I suppose they want customers to feel confident that when they buy just-go, they're at least"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:27,560",
+				"to": "00:06:29,600"
+			},
+			"offsets": {
+				"from": 387560,
+				"to": 389600
+			},
+			"text": " making an informed decision."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:29,600",
+				"to": "00:06:33,680"
+			},
+			"offsets": {
+				"from": 389600,
+				"to": 393680
+			},
+			"text": " Yes, they're buying something that will do the job they want it to."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:33,680",
+				"to": "00:06:34,880"
+			},
+			"offsets": {
+				"from": 393680,
+				"to": 394880
+			},
+			"text": " That's it!"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:34,880",
+				"to": "00:06:40,160"
+			},
+			"offsets": {
+				"from": 394880,
+				"to": 400160
+			},
+			"text": " I've read one of the most effective shampoo ads in recent times was the one for Brozine."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:40,160",
+				"to": "00:06:42,920"
+			},
+			"offsets": {
+				"from": 400160,
+				"to": 402920
+			},
+			"text": " Yes, but there's no commentary."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:42,920",
+				"to": "00:06:47,920"
+			},
+			"offsets": {
+				"from": 402920,
+				"to": 407920
+			},
+			"text": " Most images of the shampoo and lots of clean hair."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:47,920",
+				"to": "00:06:53,920"
+			},
+			"offsets": {
+				"from": 407920,
+				"to": 413920
+			},
+			"text": " I suppose the effect, though, is very calming, with soft music and very peaceful imagery."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:53,920",
+				"to": "00:06:59,200"
+			},
+			"offsets": {
+				"from": 413920,
+				"to": 419200
+			},
+			"text": " Yes, but at the end of the ad, we've hardly learned anything about the product, have we?"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:59,200",
+				"to": "00:07:04,880"
+			},
+			"offsets": {
+				"from": 419200,
+				"to": 424880
+			},
+			"text": " I suppose not, but isn't it interesting how much the ads for what are essentially very"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:04,880",
+				"to": "00:07:11,480"
+			},
+			"offsets": {
+				"from": 424880,
+				"to": 431480
+			},
+			"text": " similar products vary so much?"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:11,480",
+				"to": "00:07:13,960"
+			},
+			"offsets": {
+				"from": 431480,
+				"to": 433960
+			},
+			"text": " That is the end of Part 3."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:13,960",
+				"to": "00:07:17,740"
+			},
+			"offsets": {
+				"from": 433960,
+				"to": 437740
+			},
+			"text": " You now have 30 seconds to check your answers to Part 3."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:41,480",
+				"to": "00:07:42,480"
+			},
+			"offsets": {
+				"from": 461480,
+				"to": 462480
+			},
+			"text": " Thank you."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:42,480",
+				"to": "00:07:42,480"
+			},
+			"offsets": {
+				"from": 462480,
+				"to": 462480
+			},
+			"text": " [END]"
+		}
+	]
+}

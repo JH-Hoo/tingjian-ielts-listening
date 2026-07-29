@@ -25,7 +25,8 @@ const cleanTitle = (name) =>
     .trim();
 
 const bridgeScript = (exerciseId) =>
-  `<script src="../../score-bridge.js" data-exercise-id="${exerciseId}"></script>`;
+  `<script src="../../score-bridge.js" data-exercise-id="${exerciseId}"></script>
+<script src="../../explanation-bridge.js" data-exercise-id="${exerciseId}"></script>`;
 
 const manifest = [];
 for (const part of ["P1", "P2", "P3", "P4"]) {

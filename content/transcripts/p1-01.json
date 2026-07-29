@@ -1,0 +1,659 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "work/models/ggml-small.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:12,480"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 12480
+			},
+			"text": " Section 1. You'll hear a telephone conversation between a woman who is looking for information"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,480",
+				"to": "00:00:19,660"
+			},
+			"offsets": {
+				"from": 12480,
+				"to": 19660
+			},
+			"text": " about holidays and an agent for a tour company. First you have some time to look at questions"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,660",
+				"to": "00:00:30,080"
+			},
+			"offsets": {
+				"from": 19660,
+				"to": 30080
+			},
+			"text": " 1 to 7 on page 2."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,660",
+				"to": "00:01:03,620"
+			},
+			"offsets": {
+				"from": 49660,
+				"to": 63620
+			},
+			"text": " You will see that there is an example that has been done for you. On this occasion only,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,620",
+				"to": "00:01:07,820"
+			},
+			"offsets": {
+				"from": 63620,
+				"to": 67820
+			},
+			"text": " the conversation relating to this will be played first."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,820",
+				"to": "00:01:15,460"
+			},
+			"offsets": {
+				"from": 67820,
+				"to": 75460
+			},
+			"text": " Asia Pacific Tours can I help you? Yes, I've been looking at your website and I'd like"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:15,460",
+				"to": "00:01:20,700"
+			},
+			"offsets": {
+				"from": 75460,
+				"to": 80700
+			},
+			"text": " some more information about your activity holidays. Certainly. You know of course the"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:20,700",
+				"to": "00:01:27,120"
+			},
+			"offsets": {
+				"from": 80700,
+				"to": 87120
+			},
+			"text": " prices of the tours include stays in three-star hotels and they include airfares. Great! What"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:27,120",
+				"to": "00:01:33,820"
+			},
+			"offsets": {
+				"from": 87120,
+				"to": 93820
+			},
+			"text": " about your tour of Vietnam? My sister went there last year and loved it."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,820",
+				"to": "00:01:45,460"
+			},
+			"offsets": {
+				"from": 93820,
+				"to": 105460
+			},
+			"text": " The first tour the caller asks about is Vietnam. So Vietnam has been written in the space."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:45,460",
+				"to": "00:01:50,960"
+			},
+			"offsets": {
+				"from": 105460,
+				"to": 110960
+			},
+			"text": " Now we shall begin. You should answer the questions as you listen because you will not"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:50,960",
+				"to": "00:02:01,180"
+			},
+			"offsets": {
+				"from": 110960,
+				"to": 121180
+			},
+			"text": " hear the recording a second time. Listen carefully and answer questions 1 to 7."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:01,180",
+				"to": "00:02:06,260"
+			},
+			"offsets": {
+				"from": 121180,
+				"to": 126260
+			},
+			"text": " Asia Pacific Tours can I help you? Yes, I've been looking at your website and I'd like"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:06,260",
+				"to": "00:02:11,540"
+			},
+			"offsets": {
+				"from": 126260,
+				"to": 131540
+			},
+			"text": " some more information about your activity holidays. Certainly. You know of course the"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:11,540",
+				"to": "00:02:17,900"
+			},
+			"offsets": {
+				"from": 131540,
+				"to": 137900
+			},
+			"text": " prices of the tours include stays in three-star hotels and they include airfares. Great! What"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:17,900",
+				"to": "00:02:23,620"
+			},
+			"offsets": {
+				"from": 137900,
+				"to": 143620
+			},
+			"text": " about your tour of Vietnam? My sister went there last year and loved it. Yes, it's a"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:23,620",
+				"to": "00:02:29,780"
+			},
+			"offsets": {
+				"from": 143620,
+				"to": 149780
+			},
+			"text": " really beautiful place and probably our fastest growing destination. Now that package includes"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:29,780",
+				"to": "00:02:35,300"
+			},
+			"offsets": {
+				"from": 149780,
+				"to": 155300
+			},
+			"text": " several opportunities to take courses. Don't you have a cookery course of some kind? We"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:35,300",
+				"to": "00:02:40,940"
+			},
+			"offsets": {
+				"from": 155300,
+				"to": 160940
+			},
+			"text": " certainly do. If you love eating out in Vietnam like most people do and want to know how to"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:40,940",
+				"to": "00:02:47,140"
+			},
+			"offsets": {
+				"from": 160940,
+				"to": 167140
+			},
+			"text": " prepare a meal you can learn how from a master in a five-star hotel. On another day you have"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:47,140",
+				"to": "00:02:53,740"
+			},
+			"offsets": {
+				"from": 167140,
+				"to": 173740
+			},
+			"text": " a choice of two activities. The first is instruction in diving in the South China Sea. Not a certificate"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:53,740",
+				"to": "00:02:59,300"
+			},
+			"offsets": {
+				"from": 173740,
+				"to": 179300
+			},
+			"text": " course but just an introduction. Most people think it's wonderful. Or if you want to stay"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:59,300",
+				"to": "00:03:03,980"
+			},
+			"offsets": {
+				"from": 179300,
+				"to": 183980
+			},
+			"text": " dry but still want some exercise you can spend the day on a trek through the jungle near"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:03,980",
+				"to": "00:03:11,340"
+			},
+			"offsets": {
+				"from": 183980,
+				"to": 191340
+			},
+			"text": " the beach. It's not difficult and everyone seems to enjoy it. Anything cultural on offer?"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:11,340",
+				"to": "00:03:16,940"
+			},
+			"offsets": {
+				"from": 191340,
+				"to": 196940
+			},
+			"text": " We used to take people to a Vietnamese opera but that didn't prove so popular. So now we"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:16,940",
+				"to": "00:03:21,740"
+			},
+			"offsets": {
+				"from": 196940,
+				"to": 201740
+			},
+			"text": " include a dance show and our clients all rave about that. They say the colours are just"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:21,740",
+				"to": "00:03:27,940"
+			},
+			"offsets": {
+				"from": 201740,
+				"to": 207940
+			},
+			"text": " magnificent. What's the cost? I've just noticed it's now a special price. The holiday used"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:27,940",
+				"to": "00:03:35,860"
+			},
+			"offsets": {
+				"from": 207940,
+				"to": 215860
+			},
+			"text": " to be £1,600 but it's just been reduced to £1,450 so you do save quite a bit and as"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:35,860",
+				"to": "00:03:41,440"
+			},
+			"offsets": {
+				"from": 215860,
+				"to": 221440
+			},
+			"text": " I said it seems to be our up-and-coming tour. Well, let's see. Perhaps you could tell me"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:41,440",
+				"to": "00:03:46,820"
+			},
+			"offsets": {
+				"from": 221440,
+				"to": 226820
+			},
+			"text": " a little about the Hong Kong tour. I noticed it includes a walk in the hills of one of"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:46,820",
+				"to": "00:03:53,060"
+			},
+			"offsets": {
+				"from": 226820,
+				"to": 233060
+			},
+			"text": " their country parks where you have the chance to see birds of all sorts. Yes, that's a very"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:53,060",
+				"to": "00:03:58,620"
+			},
+			"offsets": {
+				"from": 233060,
+				"to": 238620
+			},
+			"text": " popular activity. People don't realise that Hong Kong isn't just a crowded city. That's"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:58,620",
+				"to": "00:04:03,680"
+			},
+			"offsets": {
+				"from": 238620,
+				"to": 243680
+			},
+			"text": " a half-day activity and you go with a trained escort and it includes dinner in a monastery"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:03,680",
+				"to": "00:04:08,700"
+			},
+			"offsets": {
+				"from": 243680,
+				"to": 248700
+			},
+			"text": " where you end your day. And then we wouldn't want you to miss out altogether on shopping"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:08,700",
+				"to": "00:04:14,180"
+			},
+			"offsets": {
+				"from": 248700,
+				"to": 254180
+			},
+			"text": " so there's another day when we take you around an electronics factory. Now, that might sound"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:14,180",
+				"to": "00:04:18,860"
+			},
+			"offsets": {
+				"from": 254180,
+				"to": 258860
+			},
+			"text": " like an odd thing to do but it's actually really fascinating and not like your usual"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:18,860",
+				"to": "00:04:24,420"
+			},
+			"offsets": {
+				"from": 258860,
+				"to": 264420
+			},
+			"text": " ceramics factory and you can buy their products there quite cheaply. Now, the whole Hong Kong"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:24,420",
+				"to": "00:04:33,540"
+			},
+			"offsets": {
+				"from": 264420,
+				"to": 273540
+			},
+			"text": " package is just £1,320 per person. Sounds interesting."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:33,540",
+				"to": "00:04:58,140"
+			},
+			"offsets": {
+				"from": 273540,
+				"to": 298140
+			},
+			"text": " Before you hear the rest of the conversation, you have some time to look at questions 8-10"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:58,140",
+				"to": "00:05:08,340"
+			},
+			"offsets": {
+				"from": 298140,
+				"to": 308340
+			},
+			"text": " But let me find out about one more place. I've always wanted to go to Korea but not"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:08,340",
+				"to": "00:05:15,460"
+			},
+			"offsets": {
+				"from": 308340,
+				"to": 315460
+			},
+			"text": " on this trip. And I've been to Thailand which I loved but what about your Japan package?"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:15,460",
+				"to": "00:05:21,340"
+			},
+			"offsets": {
+				"from": 315460,
+				"to": 321340
+			},
+			"text": " Good choice. Well, that tour includes a terrific trip to a museum of traditional costume. The"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:21,340",
+				"to": "00:05:27,060"
+			},
+			"offsets": {
+				"from": 321340,
+				"to": 327060
+			},
+			"text": " exhibits are gorgeous. They've got an absolutely priceless collection. And I think the website"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:27,060",
+				"to": "00:05:33,540"
+			},
+			"offsets": {
+				"from": 327060,
+				"to": 333540
+			},
+			"text": " says you take your clients to a market, don't you? A crafts market I think. Well, we do"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:33,540",
+				"to": "00:05:38,940"
+			},
+			"offsets": {
+				"from": 333540,
+				"to": 338940
+			},
+			"text": " go to a market but it's one that sells fish and it's one of the largest in the world."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:38,940",
+				"to": "00:05:43,420"
+			},
+			"offsets": {
+				"from": 338940,
+				"to": 343420
+			},
+			"text": " And you have the chance to sample the wares in a little restaurant nearby. We also give"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:43,420",
+				"to": "00:05:48,380"
+			},
+			"offsets": {
+				"from": 343420,
+				"to": 348380
+			},
+			"text": " you plenty of free time to wander around the city with our guides if you want. And what's"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:48,380",
+				"to": "00:05:55,580"
+			},
+			"offsets": {
+				"from": 348380,
+				"to": 355580
+			},
+			"text": " the cost of all that? £1,800. Well, you've been ever so helpful. I've noted all the details"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:55,580",
+				"to": "00:06:00,900"
+			},
+			"offsets": {
+				"from": 355580,
+				"to": 360900
+			},
+			"text": " down and I'll get back to you when I've made up my mind. If we can give you any more help,"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:00,900",
+				"to": "00:06:03,200"
+			},
+			"offsets": {
+				"from": 360900,
+				"to": 363200
+			},
+			"text": " do ring back. Thanks, I will."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:03,200",
+				"to": "00:06:09,500"
+			},
+			"offsets": {
+				"from": 363200,
+				"to": 369500
+			},
+			"text": " Joy in Litz. That is the end of section 1. You now have"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:09,500",
+				"to": "00:06:12,820"
+			},
+			"offsets": {
+				"from": 369500,
+				"to": 372820
+			},
+			"text": " half a minute to check your answers. Joy in Litz."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:25,580",
+				"to": "00:06:26,580"
+			},
+			"offsets": {
+				"from": 385580,
+				"to": 386580
+			},
+			"text": " [End of Audio]"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:26,580",
+				"to": "00:06:26,580"
+			},
+			"offsets": {
+				"from": 386580,
+				"to": 386580
+			},
+			"text": " 1"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:55,580",
+				"to": "00:06:56,580"
+			},
+			"offsets": {
+				"from": 415580,
+				"to": 416580
+			},
+			"text": " 1"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:25,580",
+				"to": "00:07:35,580"
+			},
+			"offsets": {
+				"from": 445580,
+				"to": 455580
+			},
+			"text": " [BLANK_AUDIO]"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:55,580",
+				"to": "00:08:05,580"
+			},
+			"offsets": {
+				"from": 475580,
+				"to": 485580
+			},
+			"text": " [BLANK_AUDIO]"
+		}
+	]
+}

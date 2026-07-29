@@ -596,7 +596,7 @@ const answerPanel = (question, answerText) => `
     <div class="answer-heading"><span class="answer-question">Q${escapeHtml(
       question.n ?? question.label ?? "",
     )}</span><strong class="result-label"></strong><span>答案：${escapeHtml(answerText)}</span></div>
-    <p class="source-note">源文件未提供逐题解析。</p>
+    <p class="source-note">提交后显示听力原文定位与解析。</p>
   </div>`;
 
 const textResult = (question) => `
@@ -922,6 +922,7 @@ export function renderPdfOnlyExercise(exerciseKey, audioName) {
       window.scrollTo({top:0,behavior:'smooth'});
     });
   </script>
+  <script src="../../explanation-bridge.js" data-exercise-id="${exercise.id}"></script>
 </body>
 </html>`;
 }

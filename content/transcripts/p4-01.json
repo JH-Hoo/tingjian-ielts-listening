@@ -1,0 +1,604 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "work/models/ggml-small.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6600
+			},
+			"text": " I'll listen carefully and answer questions 31 to 40."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,600",
+				"to": "00:00:13,080"
+			},
+			"offsets": {
+				"from": 6600,
+				"to": 13080
+			},
+			"text": " Good morning everyone. In today's psychology lecture I'll be talking about human memory."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,080",
+				"to": "00:00:18,540"
+			},
+			"offsets": {
+				"from": 13080,
+				"to": 18540
+			},
+			"text": " And what I want to do first is establish the historical context. So I'll outline various"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,540",
+				"to": "00:00:23,680"
+			},
+			"offsets": {
+				"from": 18540,
+				"to": 23680
+			},
+			"text": " ideas about human memory and how they've changed over time."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,680",
+				"to": "00:00:31,320"
+			},
+			"offsets": {
+				"from": 23680,
+				"to": 31320
+			},
+			"text": " So first, early cultures. Now, in the earliest times, let's say before 3000 years BC, people"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,320",
+				"to": "00:00:37,200"
+			},
+			"offsets": {
+				"from": 31320,
+				"to": 37200
+			},
+			"text": " were dependent on being able to remember things. Perhaps even more than we are today. That's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,200",
+				"to": "00:00:42,480"
+			},
+			"offsets": {
+				"from": 37200,
+				"to": 42480
+			},
+			"text": " because humans could not write. The skill hadn't been developed. So a good memory was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,480",
+				"to": "00:00:48,560"
+			},
+			"offsets": {
+				"from": 42480,
+				"to": 48560
+			},
+			"text": " important. For one thing, it helped people navigate in the area around their homes. And"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,560",
+				"to": "00:00:54,520"
+			},
+			"offsets": {
+				"from": 48560,
+				"to": 54520
+			},
+			"text": " it was the only way to access family history and ancestry. What's more, a good memory might"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,520",
+				"to": "00:01:00,240"
+			},
+			"offsets": {
+				"from": 54520,
+				"to": 60240
+			},
+			"text": " be the difference between life and death. Most people were hunters and gatherers, so"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:00,240",
+				"to": "00:01:05,680"
+			},
+			"offsets": {
+				"from": 60240,
+				"to": 65680
+			},
+			"text": " it was essential to understand which foods were poisonous and which were not. This was"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:05,680",
+				"to": "00:01:10,720"
+			},
+			"offsets": {
+				"from": 65680,
+				"to": 70720
+			},
+			"text": " particularly true of plants because they sometimes looked very similar. And the only way to store"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,720",
+				"to": "00:01:17,200"
+			},
+			"offsets": {
+				"from": 70720,
+				"to": 77200
+			},
+			"text": " this information and pass it on to the next generation was to remember it. Unfortunately,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:17,200",
+				"to": "00:01:21,560"
+			},
+			"offsets": {
+				"from": 77200,
+				"to": 81560
+			},
+			"text": " because it was so long ago, there's limited information about what techniques we use to"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,560",
+				"to": "00:01:23,360"
+			},
+			"offsets": {
+				"from": 81560,
+				"to": 83360
+			},
+			"text": " assist memory."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:23,360",
+				"to": "00:01:29,080"
+			},
+			"offsets": {
+				"from": 83360,
+				"to": 89080
+			},
+			"text": " Okay, so moving on now to the ancient Greeks. And the Greek poet named Simonides, who lived"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:29,080",
+				"to": "00:01:36,720"
+			},
+			"offsets": {
+				"from": 89080,
+				"to": 96720
+			},
+			"text": " around 500 BC, was the man sometimes described as the father of memory training. Simonides'"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:36,720",
+				"to": "00:01:41,880"
+			},
+			"offsets": {
+				"from": 96720,
+				"to": 101880
+			},
+			"text": " most important idea was that it's much easier to remember information if we connect it with"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:41,880",
+				"to": "00:01:47,920"
+			},
+			"offsets": {
+				"from": 101880,
+				"to": 107920
+			},
+			"text": " one particular place. Then, over hundreds of years, other Greek scholars developed his"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:47,920",
+				"to": "00:01:54,320"
+			},
+			"offsets": {
+				"from": 107920,
+				"to": 114320
+			},
+			"text": " ideas about memory. And a lot of this information has survived. So, we know that, by the first"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,320",
+				"to": "00:01:59,780"
+			},
+			"offsets": {
+				"from": 114320,
+				"to": 119780
+			},
+			"text": " century, the Greeks believed that people could use their human senses to improve their memory."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:59,780",
+				"to": "00:02:03,680"
+			},
+			"offsets": {
+				"from": 119780,
+				"to": 123680
+			},
+			"text": " And this was particularly true when it came to sight. There was a strong connection there"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:03,680",
+				"to": "00:02:05,120"
+			},
+			"offsets": {
+				"from": 123680,
+				"to": 125120
+			},
+			"text": " they believed."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:05,120",
+				"to": "00:02:10,760"
+			},
+			"offsets": {
+				"from": 125120,
+				"to": 130760
+			},
+			"text": " Well, next I should talk about the ancient Romans, who, like the Greeks, believed memory"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:10,760",
+				"to": "00:02:16,680"
+			},
+			"offsets": {
+				"from": 130760,
+				"to": 136680
+			},
+			"text": " training was extremely important. They used memory in many different ways, obviously."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:16,680",
+				"to": "00:02:21,320"
+			},
+			"offsets": {
+				"from": 136680,
+				"to": 141320
+			},
+			"text": " But most of all, in ancient Rome, people thought that one of the greatest skills was the ability"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:21,320",
+				"to": "00:02:27,600"
+			},
+			"offsets": {
+				"from": 141320,
+				"to": 147600
+			},
+			"text": " to give an impressive speech in public. And memory was one of the keys to doing that."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:27,600",
+				"to": "00:02:35,600"
+			},
+			"offsets": {
+				"from": 147600,
+				"to": 155600
+			},
+			"text": " So this was why, from about 100 BC, the Romans wanted to develop techniques to improve memory."
+		},
+		{
+			"timestamps": {
+				"from": "00:02:35,600",
+				"to": "00:02:42,080"
+			},
+			"offsets": {
+				"from": 155600,
+				"to": 162080
+			},
+			"text": " And an important figure here was Cicero, a Roman political leader. One of Cicero's ideas"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:42,080",
+				"to": "00:02:47,440"
+			},
+			"offsets": {
+				"from": 162080,
+				"to": 167440
+			},
+			"text": " was that humans actually have two types of memory. There's a memory that can be developed,"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:47,440",
+				"to": "00:02:52,120"
+			},
+			"offsets": {
+				"from": 167440,
+				"to": 172120
+			},
+			"text": " which he called the artificial memory. And there's another type of memory, which he called"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:52,120",
+				"to": "00:02:57,800"
+			},
+			"offsets": {
+				"from": 172120,
+				"to": 177800
+			},
+			"text": " natural. And the point is that you can learn techniques to help improve your artificial"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:57,800",
+				"to": "00:03:07,280"
+			},
+			"offsets": {
+				"from": 177800,
+				"to": 187280
+			},
+			"text": " memory, an idea that's interested some academics ever since."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:07,280",
+				"to": "00:03:13,360"
+			},
+			"offsets": {
+				"from": 187280,
+				"to": 193360
+			},
+			"text": " So moving next to later European history. And the first thing to note is that, during"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:13,360",
+				"to": "00:03:19,440"
+			},
+			"offsets": {
+				"from": 193360,
+				"to": 199440
+			},
+			"text": " the Middle Ages, a group of academics called the Scholastics were also interested in memory"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:19,440",
+				"to": "00:03:25,480"
+			},
+			"offsets": {
+				"from": 199440,
+				"to": 205480
+			},
+			"text": " techniques. The Scholastics used these techniques when they were instructing pupils about religion."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:25,480",
+				"to": "00:03:31,080"
+			},
+			"offsets": {
+				"from": 205480,
+				"to": 211080
+			},
+			"text": " And this raised the profile of memory techniques. But later, attitudes towards memory began"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:31,080",
+				"to": "00:03:37,320"
+			},
+			"offsets": {
+				"from": 211080,
+				"to": 217320
+			},
+			"text": " to change, and this started in the 17th century. People began to see memory training as an"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:37,320",
+				"to": "00:03:41,880"
+			},
+			"offsets": {
+				"from": 217320,
+				"to": 221880
+			},
+			"text": " art form, and that didn't interest them so much anymore, because they thought that science"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:41,880",
+				"to": "00:03:47,960"
+			},
+			"offsets": {
+				"from": 221880,
+				"to": 227960
+			},
+			"text": " had the answers to most human questions. This attitude really continued into the 19th century"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:47,960",
+				"to": "00:03:53,960"
+			},
+			"offsets": {
+				"from": 227960,
+				"to": 233960
+			},
+			"text": " as well. Children weren't taught memory techniques, but were expected to learn lots of facts, and"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:53,960",
+				"to": "00:03:58,240"
+			},
+			"offsets": {
+				"from": 233960,
+				"to": 238240
+			},
+			"text": " to do this by constantly repeating things like dates and so on."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:58,240",
+				"to": "00:04:05,120"
+			},
+			"offsets": {
+				"from": 238240,
+				"to": 245120
+			},
+			"text": " Okay, so then we come to modern times. And in the 1940s, a remarkable series of studies"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:05,120",
+				"to": "00:04:12,160"
+			},
+			"offsets": {
+				"from": 245120,
+				"to": 252160
+			},
+			"text": " was conducted with a man known simply as S. Psychologists found that S never made notes"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:12,160",
+				"to": "00:04:18,040"
+			},
+			"offsets": {
+				"from": 252160,
+				"to": 258040
+			},
+			"text": " about anything, although he was a journalist and never forgot facts. The researchers concluded"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:18,040",
+				"to": "00:04:25,200"
+			},
+			"offsets": {
+				"from": 258040,
+				"to": 265200
+			},
+			"text": " that S had an unusual medical condition, which meant he'd developed incredible memory skills."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:25,200",
+				"to": "00:04:28,980"
+			},
+			"offsets": {
+				"from": 265200,
+				"to": 268980
+			},
+			"text": " This was important as it seemed to support the ideas of the ancient Greeks and other"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:28,980",
+				"to": "00:04:34,560"
+			},
+			"offsets": {
+				"from": 268980,
+				"to": 274560
+			},
+			"text": " much earlier scholars. But in the later part of the 20th century, the focus switched to"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:34,560",
+				"to": "00:04:39,480"
+			},
+			"offsets": {
+				"from": 274560,
+				"to": 279480
+			},
+			"text": " computers. Okay, well, that's the historical context. Let's now turn to..."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:48,040",
+				"to": "00:04:58,040"
+			},
+			"offsets": {
+				"from": 288040,
+				"to": 298040
+			},
+			"text": " [BLANK_AUDIO]"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:18,040",
+				"to": "00:05:28,040"
+			},
+			"offsets": {
+				"from": 318040,
+				"to": 328040
+			},
+			"text": " [BLANK_AUDIO]"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:48,040",
+				"to": "00:05:58,040"
+			},
+			"offsets": {
+				"from": 348040,
+				"to": 358040
+			},
+			"text": " [BLANK_AUDIO]"
+		}
+	]
+}

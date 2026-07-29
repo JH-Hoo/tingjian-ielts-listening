@@ -1,0 +1,670 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "work/models/ggml-small.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:13,120"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 13120
+			},
+			"text": " Section 4. You will hear a lecture on a very popular Canadian food product called maple"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,120",
+				"to": "00:00:19,760"
+			},
+			"offsets": {
+				"from": 13120,
+				"to": 19760
+			},
+			"text": " syrup. First you have some time to look at questions 31 to 40 on page 7."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,000",
+				"to": "00:00:32,000"
+			},
+			"offsets": {
+				"from": 30000,
+				"to": 32000
+			},
+			"text": " You"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:00,000",
+				"to": "00:01:19,840"
+			},
+			"offsets": {
+				"from": 60000,
+				"to": 79840
+			},
+			"text": " now listen carefully and answer questions 31 to 40. Maple syrup can be described as"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,840",
+				"to": "00:01:27,140"
+			},
+			"offsets": {
+				"from": 79840,
+				"to": 87140
+			},
+			"text": " very sweet. Canadians pour it generously over things like pancakes for breakfast. The syrup"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:27,140",
+				"to": "00:01:33,020"
+			},
+			"offsets": {
+				"from": 87140,
+				"to": 93020
+			},
+			"text": " is produced from the maple tree and it actually comes from the tree's sap which is the watery"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,020",
+				"to": "00:01:39,140"
+			},
+			"offsets": {
+				"from": 93020,
+				"to": 99140
+			},
+			"text": " substance that comes out of the trunk of the tree when this is cut. In order for enough"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:39,140",
+				"to": "00:01:46,940"
+			},
+			"offsets": {
+				"from": 99140,
+				"to": 106940
+			},
+			"text": " sap to be produced very special climate conditions are needed. In spring the temperatures need"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:46,940",
+				"to": "00:01:54,640"
+			},
+			"offsets": {
+				"from": 106940,
+				"to": 114640
+			},
+			"text": " to drop to well below zero at night but then they need to rise sharply during the day so"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:54,640",
+				"to": "00:02:02,460"
+			},
+			"offsets": {
+				"from": 114640,
+				"to": 122460
+			},
+			"text": " they're hugely different over a 24 hour period. And that's exactly what happens in northeastern"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:02,460",
+				"to": "00:02:10,540"
+			},
+			"offsets": {
+				"from": 122460,
+				"to": 130540
+			},
+			"text": " Canada every spring. The indigenous peoples of North America known as the First Nations"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:10,540",
+				"to": "00:02:17,980"
+			},
+			"offsets": {
+				"from": 130540,
+				"to": 137980
+			},
+			"text": " discovered the maple secret long before the Europeans arrived. Early folk stories say"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:17,980",
+				"to": "00:02:24,980"
+			},
+			"offsets": {
+				"from": 137980,
+				"to": 144980
+			},
+			"text": " it was first discovered by a chief who threw his tomahawk which is similar to an axe into"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:24,980",
+				"to": "00:02:32,780"
+			},
+			"offsets": {
+				"from": 144980,
+				"to": 152780
+			},
+			"text": " the trunk of a tree. Clear sap started to run from the cut. His wife used this sap to"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:32,780",
+				"to": "00:02:41,180"
+			},
+			"offsets": {
+				"from": 152780,
+				"to": 161180
+			},
+			"text": " boil meat and the heat turned it into a sweet syrup which they found delicious. Whether"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:41,180",
+				"to": "00:02:47,900"
+			},
+			"offsets": {
+				"from": 161180,
+				"to": 167900
+			},
+			"text": " or not that story is true, we do know that the maple tree was very important to First"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:47,900",
+				"to": "00:02:54,180"
+			},
+			"offsets": {
+				"from": 167900,
+				"to": 174180
+			},
+			"text": " Nations peoples for hundreds of years. Collecting the sap each spring became a tradition among"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:54,180",
+				"to": "00:03:00,700"
+			},
+			"offsets": {
+				"from": 174180,
+				"to": 180700
+			},
+			"text": " them. Whole families would migrate to the areas where the maple trees grew and set up"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:00,700",
+				"to": "00:03:08,140"
+			},
+			"offsets": {
+				"from": 180700,
+				"to": 188140
+			},
+			"text": " camp there. They collected the sap from the trees using buckets. Then they needed to concentrate"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:08,140",
+				"to": "00:03:15,580"
+			},
+			"offsets": {
+				"from": 188140,
+				"to": 195580
+			},
+			"text": " the sap, removing some of the water from it to create syrup. They had two ways of doing"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:15,580",
+				"to": "00:03:23,420"
+			},
+			"offsets": {
+				"from": 195580,
+				"to": 203420
+			},
+			"text": " this. One way was to drop hot stones from a fire into the buckets to create steam. If"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:23,420",
+				"to": "00:03:30,100"
+			},
+			"offsets": {
+				"from": 203420,
+				"to": 210100
+			},
+			"text": " repeated often enough this would eventually concentrate the syrup. Another method that"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:30,100",
+				"to": "00:03:36,300"
+			},
+			"offsets": {
+				"from": 210100,
+				"to": 216300
+			},
+			"text": " they used to concentrate the syrup was to leave the sap outside overnight, exposed to"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:36,300",
+				"to": "00:03:42,540"
+			},
+			"offsets": {
+				"from": 216300,
+				"to": 222540
+			},
+			"text": " freezing temperatures. This would mean that a thick layer of ice would form on top which"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:42,540",
+				"to": "00:03:49,660"
+			},
+			"offsets": {
+				"from": 222540,
+				"to": 229660
+			},
+			"text": " could be discarded, leaving the sugary sap below. Again this process could be repeated"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:49,660",
+				"to": "00:03:57,740"
+			},
+			"offsets": {
+				"from": 229660,
+				"to": 237740
+			},
+			"text": " over several days and eventually a sweet brown syrup was produced. The First Nations people"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:57,740",
+				"to": "00:04:05,380"
+			},
+			"offsets": {
+				"from": 237740,
+				"to": 245380
+			},
+			"text": " had various uses for the sap and syrup. They drank the sap fresh from the tree as a tonic,"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:05,380",
+				"to": "00:04:11,020"
+			},
+			"offsets": {
+				"from": 245380,
+				"to": 251020
+			},
+			"text": " knowing that it was an important source of energy. But for the most part they reduced"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:11,020",
+				"to": "00:04:17,860"
+			},
+			"offsets": {
+				"from": 251020,
+				"to": 257860
+			},
+			"text": " the syrup further and then cooled it so that it crystallized into sugar. This was easy"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:17,860",
+				"to": "00:04:25,780"
+			},
+			"offsets": {
+				"from": 257860,
+				"to": 265780
+			},
+			"text": " to carry and kept indefinitely. European settlers who arrived in Canada began to learn about"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:25,780",
+				"to": "00:04:33,100"
+			},
+			"offsets": {
+				"from": 265780,
+				"to": 273100
+			},
+			"text": " the syrup from First Nations peoples and further expanded its uses. For example, they incorporated"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:33,100",
+				"to": "00:04:39,220"
+			},
+			"offsets": {
+				"from": 273100,
+				"to": 279220
+			},
+			"text": " it into medicine of different kinds. They also discovered that by adding yeast to the"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:39,220",
+				"to": "00:04:45,540"
+			},
+			"offsets": {
+				"from": 279220,
+				"to": 285540
+			},
+			"text": " sap they could make a maple drink. And by throwing the hot syrup into the snow they"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:45,540",
+				"to": "00:04:52,460"
+			},
+			"offsets": {
+				"from": 285540,
+				"to": 292460
+			},
+			"text": " could make a toffee-like candy. But like the First Nations they turned most of their sap"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:52,460",
+				"to": "00:04:58,380"
+			},
+			"offsets": {
+				"from": 292460,
+				"to": 298380
+			},
+			"text": " into maple sugar. For most people it was the only type of sugar they could afford, since"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:58,380",
+				"to": "00:05:03,500"
+			},
+			"offsets": {
+				"from": 298380,
+				"to": 303500
+			},
+			"text": " the only alternative was the sugar imported from the Caribbean, which was made from sugar"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:03,500",
+				"to": "00:05:11,900"
+			},
+			"offsets": {
+				"from": 303500,
+				"to": 311900
+			},
+			"text": " cane, and this was very expensive. However, after 1880, the Canadian government decided"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:11,900",
+				"to": "00:05:18,780"
+			},
+			"offsets": {
+				"from": 311900,
+				"to": 318780
+			},
+			"text": " to stop charging tax on Caribbean sugar, and this made it much cheaper. That meant it was"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:18,780",
+				"to": "00:05:24,820"
+			},
+			"offsets": {
+				"from": 318780,
+				"to": 324820
+			},
+			"text": " no longer cost effective to produce maple sugar, and so syrup making became the only"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:24,820",
+				"to": "00:05:36,020"
+			},
+			"offsets": {
+				"from": 324820,
+				"to": 336020
+			},
+			"text": " viable industry remaining for Canadians. And that's what we've been doing ever since."
+		},
+		{
+			"timestamps": {
+				"from": "00:05:36,020",
+				"to": "00:05:42,700"
+			},
+			"offsets": {
+				"from": 336020,
+				"to": 342700
+			},
+			"text": " At present, maple syrup is enjoying a boom. In the last two decades, production has doubled"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:42,700",
+				"to": "00:05:50,660"
+			},
+			"offsets": {
+				"from": 342700,
+				"to": 350660
+			},
+			"text": " in Canada. However, serious threats remain. Like any agricultural product, the harvest"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:50,660",
+				"to": "00:05:57,180"
+			},
+			"offsets": {
+				"from": 350660,
+				"to": 357180
+			},
+			"text": " is subject to such things as major storms or the arrival of invasive insects, both of"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:57,180",
+				"to": "00:06:03,980"
+			},
+			"offsets": {
+				"from": 357180,
+				"to": 363980
+			},
+			"text": " which have happened, and these could destroy everything. It is predicted with some certainty"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:03,980",
+				"to": "00:06:11,820"
+			},
+			"offsets": {
+				"from": 363980,
+				"to": 371820
+			},
+			"text": " that in the longer term climate change will also have an adverse effect on the sap run."
+		},
+		{
+			"timestamps": {
+				"from": "00:06:11,820",
+				"to": "00:06:19,740"
+			},
+			"offsets": {
+				"from": 371820,
+				"to": 379740
+			},
+			"text": " Then there are the social factors. Producing maple syrup is a very labour-intensive process,"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:19,740",
+				"to": "00:06:25,860"
+			},
+			"offsets": {
+				"from": 379740,
+				"to": 385860
+			},
+			"text": " making it an expensive purchase. And of equal concern is the fact that nowadays there's"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:25,860",
+				"to": "00:06:32,340"
+			},
+			"offsets": {
+				"from": 385860,
+				"to": 392340
+			},
+			"text": " a lot of competition from cheaper, artificially flavoured brands. Furthermore, we're at"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:32,340",
+				"to": "00:06:39,980"
+			},
+			"offsets": {
+				"from": 392340,
+				"to": 399980
+			},
+			"text": " a time when obesity is a major issue, making a product that is 67% sugar increasingly difficult"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:39,980",
+				"to": "00:06:47,540"
+			},
+			"offsets": {
+				"from": 399980,
+				"to": 407540
+			},
+			"text": " to sell. Nevertheless, there are reasons to be optimistic. Producers are developing markets"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:47,540",
+				"to": "00:06:55,260"
+			},
+			"offsets": {
+				"from": 407540,
+				"to": 415260
+			},
+			"text": " abroad. Our syrup is currently being exported to over 50 countries. Back here at home, chefs"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:55,260",
+				"to": "00:07:02,300"
+			},
+			"offsets": {
+				"from": 415260,
+				"to": 422300
+			},
+			"text": " use it enthusiastically. It's certainly high in calories, but it also contains proteins,"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:02,300",
+				"to": "00:07:09,020"
+			},
+			"offsets": {
+				"from": 422300,
+				"to": 429020
+			},
+			"text": " minerals and antioxidants. As such, it is still relatively healthy when you compare it"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:09,020",
+				"to": "00:07:16,340"
+			},
+			"offsets": {
+				"from": 429020,
+				"to": 436340
+			},
+			"text": " with sugar or corn syrup. Canadians are proud of maple syrup and its deep roots in our history"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:16,340",
+				"to": "00:07:23,340"
+			},
+			"offsets": {
+				"from": 436340,
+				"to": 443340
+			},
+			"text": " and geography. However, the primary reason for maple syrup success around the world remains"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:23,340",
+				"to": "00:07:35,860"
+			},
+			"offsets": {
+				"from": 443340,
+				"to": 455860
+			},
+			"text": " its taste. There's nothing quite like it."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:46,340",
+				"to": "00:07:56,340"
+			},
+			"offsets": {
+				"from": 466340,
+				"to": 476340
+			},
+			"text": " [BLANK_AUDIO]"
+		},
+		{
+			"timestamps": {
+				"from": "00:08:16,340",
+				"to": "00:08:26,340"
+			},
+			"offsets": {
+				"from": 496340,
+				"to": 506340
+			},
+			"text": " [BLANK_AUDIO]"
+		}
+	]
+}

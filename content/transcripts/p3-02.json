@@ -1,0 +1,780 @@
+{
+	"systeminfo": "WHISPER : COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "small",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"text": {
+			"ctx": 448,
+			"state": 768,
+			"head": 12,
+			"layer": 12
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "work/models/ggml-small.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:11,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 11880
+			},
+			"text": " Section 3. You will hear two students, called Josh and Emily, discussing an assignment on"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,880",
+				"to": "00:00:20,480"
+			},
+			"offsets": {
+				"from": 11880,
+				"to": 20480
+			},
+			"text": " applying scientific techniques to art. First you have some time to look at questions 21-24"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,480",
+				"to": "00:00:21,600"
+			},
+			"offsets": {
+				"from": 20480,
+				"to": 21600
+			},
+			"text": " on page 5."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,000",
+				"to": "00:00:55,320"
+			},
+			"offsets": {
+				"from": 30000,
+				"to": 55320
+			},
+			"text": " Now listen carefully and answer questions 21-24."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,320",
+				"to": "00:01:04,920"
+			},
+			"offsets": {
+				"from": 55320,
+				"to": 64920
+			},
+			"text": " JOSH Hi Emily. EMILY Hi Josh. Are you ready to work on the assignment? JOSH Yeah. Now"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,920",
+				"to": "00:01:10,000"
+			},
+			"offsets": {
+				"from": 64920,
+				"to": 70000
+			},
+			"text": " we need to describe how modern scientific techniques are being used in the field of"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,000",
+				"to": "00:01:16,800"
+			},
+			"offsets": {
+				"from": 70000,
+				"to": 76800
+			},
+			"text": " art history. EMILY Right. And Dr Abbott suggested that we choose some famous cases to illustrate"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,800",
+				"to": "00:01:22,920"
+			},
+			"offsets": {
+				"from": 76800,
+				"to": 82920
+			},
+			"text": " the argument. JOSH Okay. So what have you found? EMILY Well, there's a Canadian forensic"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:22,920",
+				"to": "00:01:27,720"
+			},
+			"offsets": {
+				"from": 82920,
+				"to": 87720
+			},
+			"text": " scientist called Birro. JOSH Yes. I think I've heard of him. EMILY What do you know"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:27,720",
+				"to": "00:01:33,440"
+			},
+			"offsets": {
+				"from": 87720,
+				"to": 93440
+			},
+			"text": " about him? JOSH Well, I'm a big fan of Jackson Pollock. EMILY The modern American artist."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:33,440",
+				"to": "00:01:39,240"
+			},
+			"offsets": {
+				"from": 93440,
+				"to": 99240
+			},
+			"text": " JOSH Didn't he paint those really huge abstract paintings? JOSH That's him. EMILY I guess"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:39,240",
+				"to": "00:01:44,040"
+			},
+			"offsets": {
+				"from": 99240,
+				"to": 104040
+			},
+			"text": " it would be pretty easy to fake one of those paintings. JOSH No way Emily. I know a lot"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:44,040",
+				"to": "00:01:49,640"
+			},
+			"offsets": {
+				"from": 104040,
+				"to": 109640
+			},
+			"text": " of people think that even a child could paint one. To the untrained eye they might look"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:49,640",
+				"to": "00:01:56,840"
+			},
+			"offsets": {
+				"from": 109640,
+				"to": 116840
+			},
+			"text": " like people, but they're incredibly intricate works of art. EMILY Well, sorry, but I really"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:56,840",
+				"to": "00:02:02,880"
+			},
+			"offsets": {
+				"from": 116840,
+				"to": 122880
+			},
+			"text": " can't agree with you. Anyway, what did Birro find out? JOSH Well, Birro worked on a case"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:02,880",
+				"to": "00:02:09,040"
+			},
+			"offsets": {
+				"from": 122880,
+				"to": 129040
+			},
+			"text": " where a client asked him to prove that a painting she bought for only five dollars was an authentic"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:09,040",
+				"to": "00:02:15,440"
+			},
+			"offsets": {
+				"from": 129040,
+				"to": 135440
+			},
+			"text": " Jackson Pollock. EMILY So was it a fake? JOSH Well, Birro found evidence to show it was"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:15,440",
+				"to": "00:02:21,640"
+			},
+			"offsets": {
+				"from": 135440,
+				"to": 141640
+			},
+			"text": " a genuine Pollock, but the art world didn't accept his findings. EMILY Why? JOSH Well,"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:21,640",
+				"to": "00:02:26,580"
+			},
+			"offsets": {
+				"from": 141640,
+				"to": 146580
+			},
+			"text": " one critic said that compared to other Pollocks, the white and yellow lines on the painting"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:26,580",
+				"to": "00:02:33,280"
+			},
+			"offsets": {
+				"from": 146580,
+				"to": 153280
+			},
+			"text": " were too straight. EMILY Come on, Josh. That doesn't seem that convincing. JOSH No, you're"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:33,280",
+				"to": "00:02:38,840"
+			},
+			"offsets": {
+				"from": 153280,
+				"to": 158840
+			},
+			"text": " right. It is a bit weak. But the strongest argument was that there were no records of"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:38,840",
+				"to": "00:02:44,960"
+			},
+			"offsets": {
+				"from": 158840,
+				"to": 164960
+			},
+			"text": " previous owners. For the painting to be authentic, you really should be able to trace the painting"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:44,960",
+				"to": "00:02:52,280"
+			},
+			"offsets": {
+				"from": 164960,
+				"to": 172280
+			},
+			"text": " all the way back to the artist's studio. EMILY Well, that's true I suppose. Did they consult"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:52,280",
+				"to": "00:02:58,440"
+			},
+			"offsets": {
+				"from": 172280,
+				"to": 178440
+			},
+			"text": " with anyone else? JOSH The International Foundation for Art Research got involved. EMILY And what"
+		},
+		{
+			"timestamps": {
+				"from": "00:02:58,440",
+				"to": "00:03:04,120"
+			},
+			"offsets": {
+				"from": 178440,
+				"to": 184120
+			},
+			"text": " was their verdict? JOSH Well, they saw a definite similarity in the painting techniques used."
+		},
+		{
+			"timestamps": {
+				"from": "00:03:04,120",
+				"to": "00:03:09,360"
+			},
+			"offsets": {
+				"from": 184120,
+				"to": 189360
+			},
+			"text": " EMILY You mean the way Pollock dripped the oils on the canvas? JOSH Yeah, and they noted"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:09,360",
+				"to": "00:03:14,960"
+			},
+			"offsets": {
+				"from": 189360,
+				"to": 194960
+			},
+			"text": " the dirt and paint marks on the back, which all of Pollock's paintings have. EMILY Why's"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:14,960",
+				"to": "00:03:20,520"
+			},
+			"offsets": {
+				"from": 194960,
+				"to": 200520
+			},
+			"text": " that? JOSH He used to lie his canvases down on the ground when he painted them. But the"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:20,520",
+				"to": "00:03:25,440"
+			},
+			"offsets": {
+				"from": 200520,
+				"to": 205440
+			},
+			"text": " foundation were worried about the acrylic paint that was used on the painting. It's"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:25,440",
+				"to": "00:03:31,420"
+			},
+			"offsets": {
+				"from": 205440,
+				"to": 211420
+			},
+			"text": " quite common now, but it was very unusual back in Pollock's day. EMILY So it was probably"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:31,420",
+				"to": "00:03:38,360"
+			},
+			"offsets": {
+				"from": 211420,
+				"to": 218360
+			},
+			"text": " painted much later. JOSH Right. EMILY So whose side are we on in this argument? JOSH When"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:38,360",
+				"to": "00:03:44,240"
+			},
+			"offsets": {
+				"from": 218360,
+				"to": 224240
+			},
+			"text": " it comes to art, you can see the art critic's point. If their knowledge and expertise tells"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:44,240",
+				"to": "00:03:50,420"
+			},
+			"offsets": {
+				"from": 224240,
+				"to": 230420
+			},
+			"text": " them that it definitely isn't a Pollock painting, shouldn't we believe them? I mean, that is"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:50,420",
+				"to": "00:03:55,480"
+			},
+			"offsets": {
+				"from": 230420,
+				"to": 235480
+			},
+			"text": " usually how it works in the art world, isn't it? EMILY Art historians have always judged"
+		},
+		{
+			"timestamps": {
+				"from": "00:03:55,480",
+				"to": "00:04:02,440"
+			},
+			"offsets": {
+				"from": 235480,
+				"to": 242440
+			},
+			"text": " paintings, but things are changing now. If we have modern scientific techniques like fingerprint"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:02,440",
+				"to": "00:04:08,360"
+			},
+			"offsets": {
+				"from": 242440,
+				"to": 248360
+			},
+			"text": " analysis, why not use them? JOSH Mmm, that's true. Well, maybe we need a combination. EMILY"
+		},
+		{
+			"timestamps": {
+				"from": "00:04:08,360",
+				"to": "00:04:10,680"
+			},
+			"offsets": {
+				"from": 248360,
+				"to": 250680
+			},
+			"text": " I think you're right."
+		},
+		{
+			"timestamps": {
+				"from": "00:04:32,440",
+				"to": "00:05:01,720"
+			},
+			"offsets": {
+				"from": 272440,
+				"to": 301720
+			},
+			"text": " JOSH So did you find out anything else, Josh? JOSH Well, have you ever heard of a painting"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:01,720",
+				"to": "00:05:07,400"
+			},
+			"offsets": {
+				"from": 301720,
+				"to": 307400
+			},
+			"text": " called The Battle of Angiari? EMILY I have, actually. It's The Lost Masterpiece"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:07,400",
+				"to": "00:05:13,760"
+			},
+			"offsets": {
+				"from": 307400,
+				"to": 313760
+			},
+			"text": " by Leonardo da Vinci, the famous Italian artist. What about it? JOSH Well, an Italian art"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:13,760",
+				"to": "00:05:20,440"
+			},
+			"offsets": {
+				"from": 313760,
+				"to": 320440
+			},
+			"text": " analyst called Cerucini thinks he knows where it is, and he's using scientific techniques"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:20,440",
+				"to": "00:05:26,120"
+			},
+			"offsets": {
+				"from": 320440,
+				"to": 326120
+			},
+			"text": " to help locate it. EMILY How? JOSH Well, art historians knew where the painting was last"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:26,120",
+				"to": "00:05:32,240"
+			},
+			"offsets": {
+				"from": 326120,
+				"to": 332240
+			},
+			"text": " scene. EMILY That's right, in the Hall of the Five Hundred in Florence. JOSH Right. So"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:32,240",
+				"to": "00:05:38,520"
+			},
+			"offsets": {
+				"from": 332240,
+				"to": 338520
+			},
+			"text": " Cerucini had a theory that the painting was still there, and he set out to prove it. He"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:38,520",
+				"to": "00:05:45,160"
+			},
+			"offsets": {
+				"from": 338520,
+				"to": 345160
+			},
+			"text": " used a lot of different technology, like radar and thermographic cameras, but initially he"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:45,160",
+				"to": "00:05:51,240"
+			},
+			"offsets": {
+				"from": 345160,
+				"to": 351240
+			},
+			"text": " scanned every inch of the hall with a laser in order to make a really accurate 3D model"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:51,240",
+				"to": "00:05:56,600"
+			},
+			"offsets": {
+				"from": 351240,
+				"to": 356600
+			},
+			"text": " of the building's design. EMILY Did he think the painting was hidden in the building somewhere?"
+		},
+		{
+			"timestamps": {
+				"from": "00:05:56,600",
+				"to": "00:06:03,040"
+			},
+			"offsets": {
+				"from": 356600,
+				"to": 363040
+			},
+			"text": " JOSH Exactly. Then, to find out what the hall looked like in Leonardo's time, he took pictures"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:03,040",
+				"to": "00:06:08,800"
+			},
+			"offsets": {
+				"from": 363040,
+				"to": 368800
+			},
+			"text": " of it with a thermographic camera. EMILY Couldn't he have used ultrasound to do that? JOSH Not"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:08,800",
+				"to": "00:06:14,080"
+			},
+			"offsets": {
+				"from": 368800,
+				"to": 374080
+			},
+			"text": " really. Different types of building materials produce different amounts of radiation, and"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:14,080",
+				"to": "00:06:19,040"
+			},
+			"offsets": {
+				"from": 374080,
+				"to": 379040
+			},
+			"text": " you can really see those differences in a thermal image. EMILY So, brick would look"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:19,040",
+				"to": "00:06:25,440"
+			},
+			"offsets": {
+				"from": 379040,
+				"to": 385440
+			},
+			"text": " different from wood or glass, for example? JOSH Yes. Cerucini worked out what the building"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:25,440",
+				"to": "00:06:31,840"
+			},
+			"offsets": {
+				"from": 385440,
+				"to": 391840
+			},
+			"text": " looked like when it was first built, and what renovations took place after that. He found"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:31,840",
+				"to": "00:06:38,320"
+			},
+			"offsets": {
+				"from": 391840,
+				"to": 398320
+			},
+			"text": " that two large glass windows on the east wall had been removed and filled in by the time"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:38,320",
+				"to": "00:06:45,000"
+			},
+			"offsets": {
+				"from": 398320,
+				"to": 405000
+			},
+			"text": " da Vinci started work on his painting, leaving a space big enough for it. EMILY But why hasn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:45,000",
+				"to": "00:06:51,040"
+			},
+			"offsets": {
+				"from": 405000,
+				"to": 411040
+			},
+			"text": " the painting been seen for 400 years? JOSH Mm-hmm. To answer that question, Cerucini"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:51,040",
+				"to": "00:06:56,720"
+			},
+			"offsets": {
+				"from": 411040,
+				"to": 416720
+			},
+			"text": " needed to study that wall even more closely. EMILY Did he use the thermographic camera"
+		},
+		{
+			"timestamps": {
+				"from": "00:06:56,720",
+				"to": "00:07:02,720"
+			},
+			"offsets": {
+				"from": 416720,
+				"to": 422720
+			},
+			"text": " again? JOSH No. This time he used another kind of technology, radar. EMILY And what"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:02,720",
+				"to": "00:07:08,680"
+			},
+			"offsets": {
+				"from": 422720,
+				"to": 428680
+			},
+			"text": " did that show? JOSH It showed there were, in fact, two walls there, an older one and"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:08,680",
+				"to": "00:07:14,780"
+			},
+			"offsets": {
+				"from": 428680,
+				"to": 434780
+			},
+			"text": " a newer one built in front of it. EMILY So does Cerucini believe that da Vinci's painting"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:14,780",
+				"to": "00:07:21,920"
+			},
+			"offsets": {
+				"from": 434780,
+				"to": 441920
+			},
+			"text": " is on the concealed wall? JOSH Yes. On a stone wall concealed by the newer brick wall. EMILY"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:21,920",
+				"to": "00:07:26,840"
+			},
+			"offsets": {
+				"from": 441920,
+				"to": 446840
+			},
+			"text": " So, what's the next stage in the investigation? JOSH Well, he isn't allowed to remove any"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:26,840",
+				"to": "00:07:32,880"
+			},
+			"offsets": {
+				"from": 446840,
+				"to": 452880
+			},
+			"text": " plaster or bricks, so he's now experimenting with a gamma-ray camera to try and verify"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:32,880",
+				"to": "00:07:38,840"
+			},
+			"offsets": {
+				"from": 452880,
+				"to": 458840
+			},
+			"text": " his theory. EMILY Well, I think we've got some really strong examples there of how science"
+		},
+		{
+			"timestamps": {
+				"from": "00:07:38,840",
+				"to": "00:07:45,000"
+			},
+			"offsets": {
+				"from": 458840,
+				"to": 465000
+			},
+			"text": " can help art. Let's see if we can type up an outline."
+		},
+		{
+			"timestamps": {
+				"from": "00:07:45,000",
+				"to": "00:07:52,040"
+			},
+			"offsets": {
+				"from": 465000,
+				"to": 472040
+			},
+			"text": " That is the end of section 3. You now have half a minute to check your answers."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:08,840",
+				"to": "00:08:26,340"
+			},
+			"offsets": {
+				"from": 488840,
+				"to": 506340
+			},
+			"text": " EMILY Now turn to section 4, on page 7."
+		},
+		{
+			"timestamps": {
+				"from": "00:08:26,340",
+				"to": "00:08:41,000"
+			},
+			"offsets": {
+				"from": 506340,
+				"to": 521000
+			},
+			"text": " [END]"
+		}
+	]
+}
